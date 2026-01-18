@@ -15,6 +15,42 @@ services:
       - minio_data:/data
       - ./minio.license:/licenses/minio.license:ro
     command: server /data --console-address ":9001"
+    networks:
+      - dlh-net
+
+  trino:
+    image: trinodb/trino:latest
+    container_name: trino
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./trino/catalog:/etc/trino/catalog
+      - ./trino/config.properties:/etc/trino/config.properties
+    networks:
+      - dlh-net
+    depends_on:
+      - minio
+      - hive-metastore
+
+  
+  hive-metastore:
+    image: apache/hive:3.1.3
+    container_name: hive-metastore
+    environment:
+      SERVICE_NAME: metastore
+      HIVE_METASTORE_WAREHOUSE_DIR: s3://datalake/warehouse
+      AWS_ACCESS_KEY_ID: admin
+      AWS_SECRET_ACCESS_KEY: StrongPassword_123!
+    ports:
+      - "9083:9083"
+    depends_on:
+      - minio
+    networks:
+      - dlh-net
 
 volumes:
   minio_data:
+
+networks:
+  dlh-net:
+    driver: bridge
