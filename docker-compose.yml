@@ -24,8 +24,9 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - ./trino/catalog:/etc/trino/catalog
       - ./trino/config.properties:/etc/trino/config.properties
+      - ./trino/catalog:/etc/trino/catalog
+      - ./trino/filesystem:/etc/trino/filesystem
     networks:
       - dlh-net
     depends_on:
