@@ -1,29 +1,70 @@
 import boto3
+from botocore.client import Config
 import requests
 import xml.etree.ElementTree as ET
 import pandas as pd
 import io
 from datetime import date
+import os
+from dotenv import load_dotenv
+from pathlib import Path
 
+# =========================
+# Load .env (🔥 ОБНОВЛЕНО)
+# =========================
+BASE_DIR = Path(__file__).resolve().parent
+load_dotenv(BASE_DIR / ".env")
+
+def get_env(name):
+    value = os.getenv(name)
+    if not value:
+        raise ValueError(f"❌ Переменная {name} не найдена")
+    return value
+
+S3_ENDPOINT = get_env("S3_ENDPOINT")
+S3_BUCKET = get_env("S3_BUCKET")
+S3_ACCESS_KEY = get_env("S3_ACCESS_KEY")
+S3_SECRET_KEY = get_env("S3_SECRET_KEY")
+
+# =========================
+# S3 client (рабочий)
+# =========================
+s3 = boto3.client(
+    "s3",
+    endpoint_url=S3_ENDPOINT,
+    aws_access_key_id=S3_ACCESS_KEY,
+    aws_secret_access_key=S3_SECRET_KEY,
+    config=Config(
+        signature_version="s3",
+        s3={"addressing_style": "path"}
+    ),
+)
+
+# =========================
+# Проверка S3
+# =========================
+try:
+    s3.put_object(
+        Bucket=S3_BUCKET,
+        Key="test_connection.txt",
+        Body=b"ok",
+        ContentLength=2
+    )
+    print("✅ S3 доступен")
+except Exception as e:
+    raise RuntimeError(f"❌ Ошибка доступа к S3: {e}")
+
+# =========================
+# Constants
+# =========================
 URL = "https://iss.moex.com/iss/index.xml"
-BUCKET = "datalake"
 SOURCE = "moex"
 DOMAIN = "metadata"
 LOAD_DATE = date.today().isoformat()
 
-s3 = boto3.client(
-    "s3",
-    endpoint_url="http://localhost:9000",
-    aws_access_key_id="admin",
-    aws_secret_access_key="StrongPassword_123!",
-    region_name="us-east-1",
-)
-
-try:
-    s3.create_bucket(Bucket=BUCKET)
-except s3.exceptions.BucketAlreadyOwnedByYou:
-    pass
-
+# =========================
+# Load MOEX XML
+# =========================
 response = requests.get(URL)
 response.raise_for_status()
 
@@ -53,14 +94,15 @@ for data in root.findall("./data"):
     df = pd.DataFrame(records)
 
     # =========================
-    # Write to Parquet (in-memory)
+    # Convert to parquet
     # =========================
     buffer = io.BytesIO()
     df.to_parquet(buffer, index=False)
-    buffer.seek(0)
+
+    data_bytes = buffer.getvalue()
 
     # =========================
-    # S3 path (bronze layer)
+    # S3 path
     # =========================
     s3_key = (
         f"bronze/{SOURCE}/{DOMAIN}/{dataset_id}/"
@@ -69,12 +111,18 @@ for data in root.findall("./data"):
     )
 
     # =========================
-    # Upload to MinIO
+    # Upload
     # =========================
-    s3.put_object(
-        Bucket=BUCKET,
-        Key=s3_key,
-        Body=buffer.getvalue(),
-    )
+    try:
+        s3.put_object(
+            Bucket=S3_BUCKET,
+            Key=s3_key,
+            Body=data_bytes,
+            ContentLength=len(data_bytes)
+        )
+        print(f"✅ Uploaded: s3://{S3_BUCKET}/{s3_key}")
 
-    print(f"Uploaded: s3://{BUCKET}/{s3_key}")
+    except Exception as e:
+        print(f"❌ Ошибка загрузки {dataset_id}: {e}")
+
+print("\n🎯 Загрузка завершена")

@@ -1,0 +1,15 @@
+# env файлы
+.env
+.env.*
+config/.env
+
+# python
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# docker
+*.log
