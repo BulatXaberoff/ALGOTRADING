@@ -19,7 +19,7 @@ services:
       HIVE_S3_ENDPOINT: ${S3_ENDPOINT}
       HIVE_S3_PATH_STYLE_ACCESS: "true"
       AWS_REGION: ${S3_REGION}
-      HADOOP_OPTS: -Dfs.s3.impl=org.apache.hadoop.fs.s3a.S3AFileSystem -Dfs.s3n.impl=org.apache.hadoop.fs.s3a.S3AFileSystem -Dfs.s3a.path.style.access=true -Dfs.s3a.endpoint=${S3_ENDPOINT} -Dfs.s3a.region=${S3_REGION:-us-east-1} -Dfs.s3a.connection.ssl.enabled=true -Dfs.s3a.aws.credentials.provider=com.amazonaws.auth.DefaultAWSCredentialsProviderChain
+      HADOOP_OPTS: -Dfs.s3.impl=org.apache.hadoop.fs.s3a.S3AFileSystem -Dfs.s3n.impl=org.apache.hadoop.fs.s3a.S3AFileSystem -Dfs.s3a.path.style.access=true -Dfs.s3a.endpoint=https://s3.ru1.storage.beget.cloud -Dfs.s3a.region=ru1 -Dfs.s3a.connection.ssl.enabled=true -Dfs.s3a.aws.credentials.provider=com.amazonaws.auth.DefaultAWSCredentialsProviderChain
     ports:
       - "9083:9083"
 
