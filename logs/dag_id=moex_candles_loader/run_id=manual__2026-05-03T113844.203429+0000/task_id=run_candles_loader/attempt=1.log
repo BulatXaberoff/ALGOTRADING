@@ -1,0 +1,170 @@
+[2026-05-03T11:38:48.855+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-03T11:38:48.896+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: moex_candles_loader.run_candles_loader manual__2026-05-03T11:38:44.203429+00:00 [queued]>
+[2026-05-03T11:38:48.909+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: moex_candles_loader.run_candles_loader manual__2026-05-03T11:38:44.203429+00:00 [queued]>
+[2026-05-03T11:38:48.913+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-05-03T11:38:48.942+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_candles_loader> on 2026-05-03 11:38:44.203429+00:00
+[2026-05-03T11:38:48.953+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=84) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-05-03T11:38:48.959+0000] {standard_task_runner.py:64} INFO - Started process 92 to run task
+[2026-05-03T11:38:48.959+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'moex_candles_loader', 'run_candles_loader', 'manual__2026-05-03T11:38:44.203429+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/moex_loader_dag.py', '--cfg-path', '/tmp/tmpzlch3ng9']
+[2026-05-03T11:38:48.967+0000] {standard_task_runner.py:91} INFO - Job 6: Subtask run_candles_loader
+[2026-05-03T11:38:49.089+0000] {task_command.py:426} INFO - Running <TaskInstance: moex_candles_loader.run_candles_loader manual__2026-05-03T11:38:44.203429+00:00 [running]> on host 016e1f852a12
+[2026-05-03T11:38:49.257+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='moex_candles_loader' AIRFLOW_CTX_TASK_ID='run_candles_loader' AIRFLOW_CTX_EXECUTION_DATE='2026-05-03T11:38:44.203429+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-03T11:38:44.203429+00:00'
+[2026-05-03T11:38:49.262+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-03T11:38:49.264+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-05-03T11:38:49.266+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/scripts/candles_loader.py']
+[2026-05-03T11:38:49.288+0000] {subprocess.py:86} INFO - Output:
+[2026-05-03T11:39:29.548+0000] {subprocess.py:93} INFO - 🚀 Старт загрузки свечей | 2026-05-03 11:38:52
+[2026-05-03T11:39:29.550+0000] {subprocess.py:93} INFO - 📥 Загружаем GAZP
+[2026-05-03T11:39:29.553+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-05-03T11:39:29.554+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/urllib3/connection.py", line 203, in _new_conn
+[2026-05-03T11:39:29.554+0000] {subprocess.py:93} INFO -     sock = connection.create_connection(
+[2026-05-03T11:39:29.555+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.555+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/urllib3/util/connection.py", line 85, in create_connection
+[2026-05-03T11:39:29.556+0000] {subprocess.py:93} INFO -     raise err
+[2026-05-03T11:39:29.556+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+[2026-05-03T11:39:29.557+0000] {subprocess.py:93} INFO -     sock.connect(sa)
+[2026-05-03T11:39:29.557+0000] {subprocess.py:93} INFO - ConnectionRefusedError: [Errno 111] Connection refused
+[2026-05-03T11:39:29.558+0000] {subprocess.py:93} INFO - 
+[2026-05-03T11:39:29.558+0000] {subprocess.py:93} INFO - The above exception was the direct cause of the following exception:
+[2026-05-03T11:39:29.559+0000] {subprocess.py:93} INFO - 
+[2026-05-03T11:39:29.559+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-05-03T11:39:29.560+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/botocore/httpsession.py", line 464, in send
+[2026-05-03T11:39:29.561+0000] {subprocess.py:93} INFO -     urllib_response = conn.urlopen(
+[2026-05-03T11:39:29.562+0000] {subprocess.py:93} INFO -                       ^^^^^^^^^^^^^
+[2026-05-03T11:39:29.563+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 845, in urlopen
+[2026-05-03T11:39:29.563+0000] {subprocess.py:93} INFO -     retries = retries.increment(
+[2026-05-03T11:39:29.564+0000] {subprocess.py:93} INFO -               ^^^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.564+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/urllib3/util/retry.py", line 445, in increment
+[2026-05-03T11:39:29.565+0000] {subprocess.py:93} INFO -     raise reraise(type(error), error, _stacktrace)
+[2026-05-03T11:39:29.566+0000] {subprocess.py:93} INFO -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.567+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/urllib3/util/util.py", line 39, in reraise
+[2026-05-03T11:39:29.568+0000] {subprocess.py:93} INFO -     raise value
+[2026-05-03T11:39:29.569+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 791, in urlopen
+[2026-05-03T11:39:29.570+0000] {subprocess.py:93} INFO -     response = self._make_request(
+[2026-05-03T11:39:29.570+0000] {subprocess.py:93} INFO -                ^^^^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.571+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 497, in _make_request
+[2026-05-03T11:39:29.571+0000] {subprocess.py:93} INFO -     conn.request(
+[2026-05-03T11:39:29.573+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/botocore/awsrequest.py", line 96, in request
+[2026-05-03T11:39:29.574+0000] {subprocess.py:93} INFO -     rval = super().request(method, url, body, headers, *args, **kwargs)
+[2026-05-03T11:39:29.575+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.577+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/urllib3/connection.py", line 395, in request
+[2026-05-03T11:39:29.580+0000] {subprocess.py:93} INFO -     self.endheaders()
+[2026-05-03T11:39:29.581+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.12/http/client.py", line 1331, in endheaders
+[2026-05-03T11:39:29.582+0000] {subprocess.py:93} INFO -     self._send_output(message_body, encode_chunked=encode_chunked)
+[2026-05-03T11:39:29.582+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/botocore/awsrequest.py", line 123, in _send_output
+[2026-05-03T11:39:29.583+0000] {subprocess.py:93} INFO -     self.send(msg)
+[2026-05-03T11:39:29.583+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/botocore/awsrequest.py", line 223, in send
+[2026-05-03T11:39:29.584+0000] {subprocess.py:93} INFO -     return super().send(str)
+[2026-05-03T11:39:29.584+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.585+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.12/http/client.py", line 1035, in send
+[2026-05-03T11:39:29.585+0000] {subprocess.py:93} INFO -     self.connect()
+[2026-05-03T11:39:29.586+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/urllib3/connection.py", line 243, in connect
+[2026-05-03T11:39:29.586+0000] {subprocess.py:93} INFO -     self.sock = self._new_conn()
+[2026-05-03T11:39:29.587+0000] {subprocess.py:93} INFO -                 ^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.588+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/urllib3/connection.py", line 218, in _new_conn
+[2026-05-03T11:39:29.588+0000] {subprocess.py:93} INFO -     raise NewConnectionError(
+[2026-05-03T11:39:29.589+0000] {subprocess.py:93} INFO - urllib3.exceptions.NewConnectionError: <botocore.awsrequest.AWSHTTPConnection object at 0x7391d2e4e630>: Failed to establish a new connection: [Errno 111] Connection refused
+[2026-05-03T11:39:29.589+0000] {subprocess.py:93} INFO - 
+[2026-05-03T11:39:29.594+0000] {subprocess.py:93} INFO - During handling of the above exception, another exception occurred:
+[2026-05-03T11:39:29.595+0000] {subprocess.py:93} INFO - 
+[2026-05-03T11:39:29.595+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-05-03T11:39:29.596+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/scripts/candles_loader.py", line 167, in <module>
+[2026-05-03T11:39:29.597+0000] {subprocess.py:93} INFO -     main()
+[2026-05-03T11:39:29.597+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/scripts/candles_loader.py", line 151, in main
+[2026-05-03T11:39:29.598+0000] {subprocess.py:93} INFO -     save_dataset(
+[2026-05-03T11:39:29.598+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/scripts/candles_loader.py", line 133, in save_dataset
+[2026-05-03T11:39:29.599+0000] {subprocess.py:93} INFO -     s3_client.upload_file(str(parquet_path), bucket, s3_key)
+[2026-05-03T11:39:29.599+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/boto3/s3/inject.py", line 145, in upload_file
+[2026-05-03T11:39:29.600+0000] {subprocess.py:93} INFO -     return transfer.upload_file(
+[2026-05-03T11:39:29.600+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.600+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/boto3/s3/transfer.py", line 372, in upload_file
+[2026-05-03T11:39:29.602+0000] {subprocess.py:93} INFO -     future.result()
+[2026-05-03T11:39:29.602+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/s3transfer/futures.py", line 103, in result
+[2026-05-03T11:39:29.603+0000] {subprocess.py:93} INFO -     return self._coordinator.result()
+[2026-05-03T11:39:29.603+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.604+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/s3transfer/futures.py", line 266, in result
+[2026-05-03T11:39:29.604+0000] {subprocess.py:93} INFO -     raise self._exception
+[2026-05-03T11:39:29.605+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/s3transfer/tasks.py", line 139, in __call__
+[2026-05-03T11:39:29.605+0000] {subprocess.py:93} INFO -     return self._execute_main(kwargs)
+[2026-05-03T11:39:29.606+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.606+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/s3transfer/tasks.py", line 162, in _execute_main
+[2026-05-03T11:39:29.606+0000] {subprocess.py:93} INFO -     return_value = self._main(**kwargs)
+[2026-05-03T11:39:29.607+0000] {subprocess.py:93} INFO -                    ^^^^^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.607+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/s3transfer/upload.py", line 764, in _main
+[2026-05-03T11:39:29.608+0000] {subprocess.py:93} INFO -     client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+[2026-05-03T11:39:29.609+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/botocore/client.py", line 565, in _api_call
+[2026-05-03T11:39:29.610+0000] {subprocess.py:93} INFO -     return self._make_api_call(operation_name, kwargs)
+[2026-05-03T11:39:29.610+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.611+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/botocore/client.py", line 1001, in _make_api_call
+[2026-05-03T11:39:29.611+0000] {subprocess.py:93} INFO -     http, parsed_response = self._make_request(
+[2026-05-03T11:39:29.612+0000] {subprocess.py:93} INFO -                             ^^^^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.612+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/botocore/client.py", line 1027, in _make_request
+[2026-05-03T11:39:29.612+0000] {subprocess.py:93} INFO -     return self._endpoint.make_request(operation_model, request_dict)
+[2026-05-03T11:39:29.613+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.613+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/botocore/endpoint.py", line 119, in make_request
+[2026-05-03T11:39:29.614+0000] {subprocess.py:93} INFO -     return self._send_request(request_dict, operation_model)
+[2026-05-03T11:39:29.614+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.615+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/botocore/endpoint.py", line 202, in _send_request
+[2026-05-03T11:39:29.616+0000] {subprocess.py:93} INFO -     while self._needs_retry(
+[2026-05-03T11:39:29.616+0000] {subprocess.py:93} INFO -           ^^^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.617+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/botocore/endpoint.py", line 354, in _needs_retry
+[2026-05-03T11:39:29.617+0000] {subprocess.py:93} INFO -     responses = self._event_emitter.emit(
+[2026-05-03T11:39:29.618+0000] {subprocess.py:93} INFO -                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.618+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/botocore/hooks.py", line 412, in emit
+[2026-05-03T11:39:29.618+0000] {subprocess.py:93} INFO -     return self._emitter.emit(aliased_event_name, **kwargs)
+[2026-05-03T11:39:29.619+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.619+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/botocore/hooks.py", line 256, in emit
+[2026-05-03T11:39:29.619+0000] {subprocess.py:93} INFO -     return self._emit(event_name, kwargs)
+[2026-05-03T11:39:29.620+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.620+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/botocore/hooks.py", line 239, in _emit
+[2026-05-03T11:39:29.620+0000] {subprocess.py:93} INFO -     response = handler(**kwargs)
+[2026-05-03T11:39:29.622+0000] {subprocess.py:93} INFO -                ^^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.623+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/botocore/retryhandler.py", line 207, in __call__
+[2026-05-03T11:39:29.623+0000] {subprocess.py:93} INFO -     if self._checker(**checker_kwargs):
+[2026-05-03T11:39:29.624+0000] {subprocess.py:93} INFO -        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.624+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/botocore/retryhandler.py", line 284, in __call__
+[2026-05-03T11:39:29.625+0000] {subprocess.py:93} INFO -     should_retry = self._should_retry(
+[2026-05-03T11:39:29.625+0000] {subprocess.py:93} INFO -                    ^^^^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.629+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/botocore/retryhandler.py", line 320, in _should_retry
+[2026-05-03T11:39:29.630+0000] {subprocess.py:93} INFO -     return self._checker(attempt_number, response, caught_exception)
+[2026-05-03T11:39:29.630+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.631+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/botocore/retryhandler.py", line 363, in __call__
+[2026-05-03T11:39:29.631+0000] {subprocess.py:93} INFO -     checker_response = checker(
+[2026-05-03T11:39:29.631+0000] {subprocess.py:93} INFO -                        ^^^^^^^^
+[2026-05-03T11:39:29.632+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/botocore/retryhandler.py", line 247, in __call__
+[2026-05-03T11:39:29.632+0000] {subprocess.py:93} INFO -     return self._check_caught_exception(
+[2026-05-03T11:39:29.633+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.633+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/botocore/retryhandler.py", line 416, in _check_caught_exception
+[2026-05-03T11:39:29.634+0000] {subprocess.py:93} INFO -     raise caught_exception
+[2026-05-03T11:39:29.634+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/botocore/endpoint.py", line 281, in _do_get_response
+[2026-05-03T11:39:29.635+0000] {subprocess.py:93} INFO -     http_response = self._send(request)
+[2026-05-03T11:39:29.635+0000] {subprocess.py:93} INFO -                     ^^^^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.637+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/botocore/endpoint.py", line 377, in _send
+[2026-05-03T11:39:29.637+0000] {subprocess.py:93} INFO -     return self.http_session.send(request)
+[2026-05-03T11:39:29.638+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-03T11:39:29.639+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/botocore/httpsession.py", line 493, in send
+[2026-05-03T11:39:29.640+0000] {subprocess.py:93} INFO -     raise EndpointConnectionError(endpoint_url=request.url, error=e)
+[2026-05-03T11:39:29.640+0000] {subprocess.py:93} INFO - botocore.exceptions.EndpointConnectionError: Could not connect to the endpoint URL: "http://localhost:9000/data/moex-data/moex/candles/GAZP/GAZP_1h_20260503_113852.parquet"
+[2026-05-03T11:39:29.931+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-05-03T11:39:29.933+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-03T11:39:29.963+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-05-03T11:39:29.981+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=moex_candles_loader, task_id=run_candles_loader, run_id=manual__2026-05-03T11:38:44.203429+00:00, execution_date=20260503T113844, start_date=20260503T113848, end_date=20260503T113929
+[2026-05-03T11:39:30.027+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 6 for task run_candles_loader (Bash command failed. The command returned a non-zero exit code 1.; 92)
+[2026-05-03T11:39:30.077+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-05-03T11:39:30.128+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-03T11:39:30.139+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

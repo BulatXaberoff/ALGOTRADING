@@ -1,0 +1,651 @@
+[2026-05-04T03:50:48.112+0000] {processor.py:161} INFO - Started process (PID=5646) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:50:48.113+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T03:50:48.115+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:50:48.115+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:50:48.141+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:50:48.178+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:50:48.177+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T03:50:48.198+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:50:48.198+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T03:50:48.237+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.134 seconds
+[2026-05-04T03:51:18.371+0000] {processor.py:161} INFO - Started process (PID=5710) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:51:18.372+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T03:51:18.374+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:51:18.374+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:51:18.396+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:51:18.419+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:51:18.418+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T03:51:18.432+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:51:18.432+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T03:51:18.455+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.091 seconds
+[2026-05-04T03:51:48.685+0000] {processor.py:161} INFO - Started process (PID=5780) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:51:48.687+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T03:51:48.688+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:51:48.688+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:51:48.737+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:51:48.759+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:51:48.759+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T03:51:48.772+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:51:48.771+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T03:51:48.796+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.118 seconds
+[2026-05-04T03:52:18.900+0000] {processor.py:161} INFO - Started process (PID=5844) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:52:18.903+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T03:52:18.905+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:52:18.904+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:52:18.942+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:52:18.979+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:52:18.979+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T03:52:18.998+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:52:18.998+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T03:52:19.040+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.154 seconds
+[2026-05-04T03:52:50.179+0000] {processor.py:161} INFO - Started process (PID=5912) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:52:50.181+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T03:52:50.184+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:52:50.183+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:52:50.233+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:52:50.281+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:52:50.281+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T03:52:50.317+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:52:50.317+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T03:52:50.400+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.237 seconds
+[2026-05-04T03:53:20.633+0000] {processor.py:161} INFO - Started process (PID=5980) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:53:20.636+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T03:53:20.638+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:53:20.637+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:53:20.716+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:53:20.759+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:53:20.758+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T03:53:20.779+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:53:20.778+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T03:53:20.831+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.216 seconds
+[2026-05-04T03:53:50.924+0000] {processor.py:161} INFO - Started process (PID=6055) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:53:50.927+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T03:53:50.929+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:53:50.928+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:53:50.966+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:53:50.999+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:53:50.999+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T03:53:51.022+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:53:51.022+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T03:53:51.059+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.145 seconds
+[2026-05-04T03:54:21.915+0000] {processor.py:161} INFO - Started process (PID=6121) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:54:21.917+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T03:54:21.920+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:54:21.919+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:54:21.960+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:54:21.998+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:54:21.998+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T03:54:22.023+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:54:22.023+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T03:54:22.063+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.159 seconds
+[2026-05-04T03:54:52.685+0000] {processor.py:161} INFO - Started process (PID=6189) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:54:52.688+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T03:54:52.690+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:54:52.689+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:54:52.796+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:54:52.833+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:54:52.832+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T03:54:52.858+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:54:52.858+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T03:54:52.917+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.251 seconds
+[2026-05-04T03:55:23.192+0000] {processor.py:161} INFO - Started process (PID=6257) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:55:23.195+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T03:55:23.197+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:55:23.197+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:55:23.251+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:55:23.306+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:55:23.305+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T03:55:23.332+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:55:23.331+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T03:55:23.370+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.193 seconds
+[2026-05-04T03:55:53.996+0000] {processor.py:161} INFO - Started process (PID=6324) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:55:53.998+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T03:55:54.002+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:55:54.001+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:55:54.073+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:55:54.133+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:55:54.133+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T03:55:54.186+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:55:54.185+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T03:55:54.237+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.258 seconds
+[2026-05-04T03:56:24.364+0000] {processor.py:161} INFO - Started process (PID=6391) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:56:24.366+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T03:56:24.368+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:56:24.368+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:56:24.397+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:56:24.429+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:56:24.429+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T03:56:24.449+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:56:24.448+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T03:56:24.519+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.165 seconds
+[2026-05-04T03:56:54.857+0000] {processor.py:161} INFO - Started process (PID=6459) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:56:54.860+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T03:56:54.862+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:56:54.861+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:56:54.904+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:56:54.950+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:56:54.949+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T03:56:54.979+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:56:54.979+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T03:56:55.025+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.182 seconds
+[2026-05-04T03:57:25.234+0000] {processor.py:161} INFO - Started process (PID=6527) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:57:25.238+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T03:57:25.241+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:57:25.241+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:57:25.326+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:57:25.377+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:57:25.377+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T03:57:25.411+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:57:25.410+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T03:57:25.510+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.290 seconds
+[2026-05-04T03:57:55.862+0000] {processor.py:161} INFO - Started process (PID=6595) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:57:55.866+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T03:57:55.869+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:57:55.868+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:57:55.950+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:57:56.004+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:57:56.004+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T03:57:56.042+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:57:56.041+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T03:57:56.099+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.253 seconds
+[2026-05-04T03:58:26.868+0000] {processor.py:161} INFO - Started process (PID=6670) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:58:26.870+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T03:58:26.872+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:58:26.872+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:58:26.911+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:58:26.947+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:58:26.946+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T03:58:26.966+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:58:26.966+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T03:58:27.034+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.181 seconds
+[2026-05-04T03:58:57.623+0000] {processor.py:161} INFO - Started process (PID=6737) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:58:57.627+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T03:58:57.628+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:58:57.628+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:58:57.657+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:58:57.688+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:58:57.688+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T03:58:57.712+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:58:57.712+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T03:58:57.865+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.254 seconds
+[2026-05-04T03:59:28.239+0000] {processor.py:161} INFO - Started process (PID=6805) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:59:28.248+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T03:59:28.250+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:59:28.250+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:59:28.300+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:59:28.338+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:59:28.338+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T03:59:28.362+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:59:28.362+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T03:59:28.435+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.206 seconds
+[2026-05-04T03:59:59.490+0000] {processor.py:161} INFO - Started process (PID=6873) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:59:59.492+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T03:59:59.495+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:59:59.494+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:59:59.540+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T03:59:59.574+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:59:59.573+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T03:59:59.596+0000] {logging_mixin.py:188} INFO - [2026-05-04T03:59:59.596+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T03:59:59.660+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.180 seconds
+[2026-05-04T04:00:30.290+0000] {processor.py:161} INFO - Started process (PID=6941) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:00:30.292+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:00:30.294+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:00:30.294+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:00:30.343+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:00:30.382+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:00:30.382+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:00:30.409+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:00:30.408+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:00:30.458+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.179 seconds
+[2026-05-04T04:01:00.582+0000] {processor.py:161} INFO - Started process (PID=7009) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:01:00.585+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:01:00.588+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:01:00.587+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:01:00.625+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:01:00.655+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:01:00.654+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:01:00.672+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:01:00.672+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:01:00.742+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.173 seconds
+[2026-05-04T04:01:31.372+0000] {processor.py:161} INFO - Started process (PID=7077) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:01:31.375+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:01:31.376+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:01:31.376+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:01:31.412+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:01:31.448+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:01:31.448+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:01:31.471+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:01:31.470+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:01:31.545+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.185 seconds
+[2026-05-04T04:02:02.183+0000] {processor.py:161} INFO - Started process (PID=7145) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:02:02.189+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:02:02.191+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:02:02.191+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:02:02.246+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:02:02.292+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:02:02.291+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:02:02.314+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:02:02.313+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:02:02.360+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.190 seconds
+[2026-05-04T04:13:21.703+0000] {processor.py:161} INFO - Started process (PID=44) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:13:21.706+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:13:21.711+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:13:21.710+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:13:21.765+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:13:22.157+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:13:22.156+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:13:22.184+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:13:22.184+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:13:22.226+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.533 seconds
+[2026-05-04T04:13:52.400+0000] {processor.py:161} INFO - Started process (PID=120) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:13:52.403+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:13:52.411+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:13:52.410+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:13:52.443+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:13:52.487+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:13:52.487+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:13:52.514+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:13:52.513+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:13:52.565+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.179 seconds
+[2026-05-04T04:14:22.902+0000] {processor.py:161} INFO - Started process (PID=188) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:14:22.904+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:14:22.907+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:14:22.906+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:14:22.943+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:14:22.985+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:14:22.984+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:14:23.007+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:14:23.007+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:14:23.050+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.171 seconds
+[2026-05-04T04:14:53.845+0000] {processor.py:161} INFO - Started process (PID=256) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:14:53.848+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:14:53.853+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:14:53.852+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:14:53.900+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:14:53.938+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:14:53.937+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:14:53.963+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:14:53.962+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:14:54.041+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.206 seconds
+[2026-05-04T04:15:24.194+0000] {processor.py:161} INFO - Started process (PID=324) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:15:24.196+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:15:24.201+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:15:24.200+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:15:24.242+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:15:24.281+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:15:24.281+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:15:24.307+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:15:24.306+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:15:24.371+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.188 seconds
+[2026-05-04T04:15:54.541+0000] {processor.py:161} INFO - Started process (PID=392) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:15:54.544+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:15:54.549+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:15:54.548+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:15:54.592+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:15:54.629+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:15:54.628+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:15:54.654+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:15:54.653+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:15:54.697+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.166 seconds
+[2026-05-04T04:16:25.256+0000] {processor.py:161} INFO - Started process (PID=460) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:16:25.259+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:16:25.263+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:16:25.262+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:16:25.296+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:16:25.329+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:16:25.329+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:16:25.354+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:16:25.353+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:16:25.423+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.179 seconds
+[2026-05-04T04:16:55.571+0000] {processor.py:161} INFO - Started process (PID=528) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:16:55.574+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:16:55.578+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:16:55.577+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:16:55.622+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:16:55.660+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:16:55.660+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:16:55.683+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:16:55.683+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:16:55.729+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.168 seconds
+[2026-05-04T04:17:26.115+0000] {processor.py:161} INFO - Started process (PID=603) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:17:26.118+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:17:26.122+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:17:26.122+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:17:26.159+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:17:26.198+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:17:26.198+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:17:26.219+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:17:26.218+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:17:26.260+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.158 seconds
+[2026-05-04T04:17:56.860+0000] {processor.py:161} INFO - Started process (PID=671) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:17:56.863+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:17:56.867+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:17:56.867+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:17:56.909+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:17:56.950+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:17:56.950+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:17:56.972+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:17:56.972+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:17:57.035+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.188 seconds
+[2026-05-04T04:18:28.035+0000] {processor.py:161} INFO - Started process (PID=739) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:18:28.038+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:18:28.043+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:18:28.042+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:18:28.092+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:18:28.127+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:18:28.126+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:18:28.147+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:18:28.146+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:18:28.184+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.161 seconds
+[2026-05-04T04:18:58.493+0000] {processor.py:161} INFO - Started process (PID=807) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:18:58.495+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:18:58.499+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:18:58.499+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:18:58.528+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:18:58.565+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:18:58.565+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:18:58.591+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:18:58.590+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:18:58.638+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.156 seconds
+[2026-05-04T04:19:28.826+0000] {processor.py:161} INFO - Started process (PID=875) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:19:28.830+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:19:28.835+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:19:28.834+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:19:28.907+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:19:28.951+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:19:28.950+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:19:28.976+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:19:28.976+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:19:29.038+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.224 seconds
+[2026-05-04T04:19:59.182+0000] {processor.py:161} INFO - Started process (PID=943) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:19:59.184+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:19:59.190+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:19:59.189+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:19:59.229+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:19:59.265+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:19:59.264+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:19:59.292+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:19:59.291+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:19:59.358+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.186 seconds
+[2026-05-04T04:20:29.512+0000] {processor.py:161} INFO - Started process (PID=1011) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:20:29.515+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:20:29.523+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:20:29.522+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:20:29.562+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:20:29.605+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:20:29.604+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:20:29.625+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:20:29.625+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:20:29.704+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.209 seconds
+[2026-05-04T04:21:00.360+0000] {processor.py:161} INFO - Started process (PID=1086) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:21:00.362+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:21:00.366+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:21:00.365+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:21:00.398+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:21:00.435+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:21:00.434+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:21:00.456+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:21:00.456+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:21:00.522+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.172 seconds
+[2026-05-04T04:21:31.332+0000] {processor.py:161} INFO - Started process (PID=1154) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:21:31.336+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:21:31.342+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:21:31.341+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:21:31.396+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:21:31.447+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:21:31.447+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:21:31.478+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:21:31.478+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:21:31.549+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.231 seconds
+[2026-05-04T04:22:02.161+0000] {processor.py:161} INFO - Started process (PID=1222) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:22:02.164+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:22:02.169+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:22:02.168+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:22:02.233+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:22:02.274+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:22:02.274+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:22:02.295+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:22:02.294+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:22:02.334+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.186 seconds
+[2026-05-04T04:22:32.480+0000] {processor.py:161} INFO - Started process (PID=1289) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:22:32.485+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:22:32.492+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:22:32.491+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:22:32.545+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:22:32.586+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:22:32.585+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:22:32.609+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:22:32.608+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:22:32.651+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.191 seconds
+[2026-05-04T04:23:03.481+0000] {processor.py:161} INFO - Started process (PID=1356) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:23:03.483+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:23:03.487+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:23:03.487+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:23:03.523+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:23:03.565+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:23:03.565+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:23:03.589+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:23:03.589+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:23:03.630+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.162 seconds
+[2026-05-04T04:23:34.347+0000] {processor.py:161} INFO - Started process (PID=1424) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:23:34.350+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:23:34.355+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:23:34.354+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:23:34.384+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:23:34.418+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:23:34.417+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:23:34.437+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:23:34.436+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:23:34.515+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.181 seconds
+[2026-05-04T04:24:05.121+0000] {processor.py:161} INFO - Started process (PID=1491) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:24:05.124+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:24:05.128+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:24:05.127+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:24:05.159+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:24:05.197+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:24:05.196+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:24:05.224+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:24:05.224+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:24:05.302+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.195 seconds
+[2026-05-04T04:24:36.105+0000] {processor.py:161} INFO - Started process (PID=1566) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:24:36.107+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:24:36.110+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:24:36.110+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:24:36.142+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:24:36.175+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:24:36.175+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:24:36.193+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:24:36.193+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:24:36.255+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.163 seconds
+[2026-05-04T04:25:06.459+0000] {processor.py:161} INFO - Started process (PID=1634) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:25:06.461+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:25:06.465+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:25:06.464+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:25:06.497+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:25:06.531+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:25:06.531+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:25:06.554+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:25:06.554+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:25:06.591+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.142 seconds
+[2026-05-04T04:25:37.104+0000] {processor.py:161} INFO - Started process (PID=1702) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:25:37.106+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:25:37.111+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:25:37.110+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:25:37.141+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:25:37.180+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:25:37.179+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:25:37.200+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:25:37.199+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:25:37.250+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.157 seconds
+[2026-05-04T04:26:08.050+0000] {processor.py:161} INFO - Started process (PID=1770) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:26:08.052+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:26:08.055+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:26:08.055+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:26:08.083+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:26:08.119+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:26:08.118+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:26:08.137+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:26:08.136+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:26:08.197+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.156 seconds
+[2026-05-04T04:26:38.502+0000] {processor.py:161} INFO - Started process (PID=1838) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:26:38.506+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:26:38.513+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:26:38.512+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:26:38.608+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:26:38.656+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:26:38.656+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:26:38.679+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:26:38.679+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:26:38.755+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.263 seconds
+[2026-05-04T04:27:09.154+0000] {processor.py:161} INFO - Started process (PID=1905) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:27:09.156+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:27:09.161+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:27:09.160+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:27:09.211+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:27:09.252+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:27:09.251+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:27:09.276+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:27:09.276+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:27:09.317+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.176 seconds
+[2026-05-04T04:27:39.494+0000] {processor.py:161} INFO - Started process (PID=1973) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:27:39.497+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:27:39.503+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:27:39.501+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:27:39.552+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:27:39.590+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:27:39.589+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:27:39.616+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:27:39.615+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:27:39.665+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.181 seconds
+[2026-05-04T04:28:09.970+0000] {processor.py:161} INFO - Started process (PID=2048) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:28:09.975+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:28:09.981+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:28:09.980+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:28:10.040+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:28:10.081+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:28:10.081+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:28:10.101+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:28:10.100+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:28:10.169+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.218 seconds
+[2026-05-04T04:28:40.811+0000] {processor.py:161} INFO - Started process (PID=2116) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:28:40.813+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:28:40.817+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:28:40.817+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:28:40.850+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:28:40.888+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:28:40.887+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:28:40.911+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:28:40.910+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:28:40.953+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.157 seconds
+[2026-05-04T04:29:12.028+0000] {processor.py:161} INFO - Started process (PID=2184) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:29:12.031+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:29:12.036+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:29:12.035+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:29:12.080+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:29:12.119+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:29:12.119+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:29:12.143+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:29:12.142+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:29:12.193+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.175 seconds
+[2026-05-04T04:29:42.662+0000] {processor.py:161} INFO - Started process (PID=2252) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:29:42.665+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:29:42.670+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:29:42.670+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:29:42.701+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:29:42.736+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:29:42.735+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:29:42.768+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:29:42.767+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:29:42.835+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.181 seconds
+[2026-05-04T04:30:13.592+0000] {processor.py:161} INFO - Started process (PID=2320) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:30:13.594+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:30:13.598+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:30:13.597+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:30:13.626+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:30:13.656+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:30:13.656+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:30:13.670+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:30:13.670+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:30:13.732+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.478 seconds
+[2026-05-04T04:30:44.478+0000] {processor.py:161} INFO - Started process (PID=2388) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:30:44.481+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:30:44.485+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:30:44.485+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:30:44.532+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:30:44.575+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:30:44.575+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:30:44.599+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:30:44.599+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:30:44.669+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.206 seconds
+[2026-05-04T04:31:15.711+0000] {processor.py:161} INFO - Started process (PID=2463) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:31:15.712+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:31:15.716+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:31:15.715+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:31:15.743+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:31:15.780+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:31:15.780+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:31:15.802+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:31:15.801+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:31:15.871+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.171 seconds
+[2026-05-04T04:31:46.180+0000] {processor.py:161} INFO - Started process (PID=2531) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:31:46.182+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:31:46.188+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:31:46.187+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:31:46.235+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:31:46.277+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:31:46.276+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:31:46.303+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:31:46.302+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:31:46.374+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.211 seconds
+[2026-05-04T04:32:16.970+0000] {processor.py:161} INFO - Started process (PID=2599) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:32:16.972+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:32:16.977+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:32:16.976+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:32:17.013+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:32:17.050+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:32:17.050+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:32:17.076+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:32:17.075+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:32:17.148+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.191 seconds
+[2026-05-04T04:32:47.596+0000] {processor.py:161} INFO - Started process (PID=2667) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:32:47.599+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:32:47.603+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:32:47.602+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:32:47.646+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:32:47.683+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:32:47.683+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:32:47.704+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:32:47.704+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:32:47.771+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.188 seconds
+[2026-05-04T04:33:17.995+0000] {processor.py:161} INFO - Started process (PID=2735) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:33:17.998+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:33:18.004+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:33:18.004+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:33:18.049+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:33:18.093+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:33:18.092+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:33:18.118+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:33:18.118+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:33:18.187+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.203 seconds
+[2026-05-04T04:33:48.279+0000] {processor.py:161} INFO - Started process (PID=2804) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:33:48.282+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:33:48.286+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:33:48.286+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:33:48.335+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:33:48.372+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:33:48.372+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:33:48.395+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:33:48.395+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:33:48.462+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.197 seconds
+[2026-05-04T04:34:19.106+0000] {processor.py:161} INFO - Started process (PID=2879) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:34:19.108+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:34:19.113+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:34:19.112+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:34:19.155+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:34:19.194+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:34:19.194+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:34:19.217+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:34:19.216+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:34:19.256+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.161 seconds
+[2026-05-04T04:34:49.431+0000] {processor.py:161} INFO - Started process (PID=2947) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:34:49.433+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:34:49.438+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:34:49.437+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:34:49.469+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:34:49.507+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:34:49.507+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:34:49.530+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:34:49.529+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:34:49.592+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.177 seconds
+[2026-05-04T04:35:19.703+0000] {processor.py:161} INFO - Started process (PID=3015) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:35:19.707+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:35:19.712+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:35:19.711+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:35:19.746+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:35:19.789+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:35:19.788+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:35:19.809+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:35:19.808+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:35:19.843+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.154 seconds
+[2026-05-04T04:35:50.496+0000] {processor.py:161} INFO - Started process (PID=3083) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:35:50.498+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:35:50.503+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:35:50.502+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:35:50.531+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:35:50.587+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:35:50.586+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:35:50.607+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:35:50.606+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:35:50.672+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.188 seconds
+[2026-05-04T04:36:21.371+0000] {processor.py:161} INFO - Started process (PID=3150) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:36:21.374+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:36:21.378+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:36:21.377+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:36:21.435+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:36:21.475+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:36:21.475+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:36:21.494+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:36:21.494+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:36:21.530+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.171 seconds
+[2026-05-04T04:36:51.976+0000] {processor.py:161} INFO - Started process (PID=3218) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:36:51.979+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:36:51.984+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:36:51.983+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:36:52.038+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:36:52.083+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:36:52.083+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:36:52.108+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:36:52.108+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:36:52.182+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.230 seconds
+[2026-05-04T04:37:22.338+0000] {processor.py:161} INFO - Started process (PID=3287) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:37:22.340+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:37:22.345+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:37:22.344+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:37:22.374+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:37:22.408+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:37:22.408+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:37:22.427+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:37:22.427+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:37:22.469+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.142 seconds
+[2026-05-04T04:37:52.636+0000] {processor.py:161} INFO - Started process (PID=3362) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:37:52.638+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:37:52.642+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:37:52.641+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:37:52.664+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:37:52.704+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:37:52.703+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:37:52.727+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:37:52.726+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:37:52.770+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.147 seconds
+[2026-05-04T04:38:23.184+0000] {processor.py:161} INFO - Started process (PID=3430) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:38:23.186+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:38:23.189+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:38:23.189+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:38:23.228+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:38:23.262+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:38:23.262+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:38:23.286+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:38:23.285+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:38:23.324+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.150 seconds
+[2026-05-04T04:38:53.783+0000] {processor.py:161} INFO - Started process (PID=3498) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:38:53.785+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:38:53.789+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:38:53.789+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:38:53.817+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:38:53.866+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:38:53.865+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:38:53.891+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:38:53.890+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:38:53.959+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.187 seconds
+[2026-05-04T04:39:24.165+0000] {processor.py:161} INFO - Started process (PID=3567) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:39:24.166+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:39:24.173+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:39:24.172+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:39:24.219+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:39:24.260+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:39:24.260+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:39:24.285+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:39:24.285+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:39:24.349+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.194 seconds
+[2026-05-04T04:39:54.643+0000] {processor.py:161} INFO - Started process (PID=3635) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:39:54.645+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:39:54.650+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:39:54.649+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:39:54.710+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:39:54.759+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:39:54.758+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:39:54.782+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:39:54.782+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:39:54.835+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.204 seconds
+[2026-05-04T04:40:25.252+0000] {processor.py:161} INFO - Started process (PID=3703) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:40:25.255+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:40:25.260+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:40:25.259+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:40:25.309+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:40:25.354+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:40:25.352+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:40:25.382+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:40:25.382+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:40:25.422+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.181 seconds
+[2026-05-04T04:40:55.792+0000] {processor.py:161} INFO - Started process (PID=3771) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:40:55.795+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:40:55.799+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:40:55.798+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:40:55.841+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:40:55.881+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:40:55.880+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:40:55.904+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:40:55.903+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:40:55.968+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.187 seconds
+[2026-05-04T04:41:26.240+0000] {processor.py:161} INFO - Started process (PID=3839) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:41:26.242+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:41:26.246+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:41:26.246+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:41:26.304+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:41:26.343+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:41:26.343+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:41:26.365+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:41:26.364+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:41:26.521+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.293 seconds
+[2026-05-04T04:41:56.905+0000] {processor.py:161} INFO - Started process (PID=3914) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:41:56.907+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:41:56.911+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:41:56.911+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:41:56.946+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:41:56.988+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:41:56.988+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:41:57.011+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:41:57.011+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:41:57.079+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.185 seconds
+[2026-05-04T04:42:28.138+0000] {processor.py:161} INFO - Started process (PID=3982) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:42:28.140+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:42:28.144+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:42:28.144+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:42:28.182+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:42:28.222+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:42:28.221+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:42:28.248+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:42:28.247+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:42:28.311+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.182 seconds
+[2026-05-04T04:42:58.752+0000] {processor.py:161} INFO - Started process (PID=4050) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:42:58.754+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:42:58.758+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:42:58.757+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:42:58.794+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:42:58.830+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:42:58.829+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:42:58.851+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:42:58.851+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:42:58.925+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.184 seconds
+[2026-05-04T04:43:29.446+0000] {processor.py:161} INFO - Started process (PID=4118) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:43:29.449+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:43:29.454+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:43:29.453+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:43:29.505+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:43:29.552+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:43:29.551+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:43:29.575+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:43:29.575+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:43:29.628+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.194 seconds
+[2026-05-04T04:43:59.767+0000] {processor.py:161} INFO - Started process (PID=4185) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:43:59.769+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:43:59.773+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:43:59.772+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:43:59.812+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:43:59.850+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:43:59.849+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:43:59.871+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:43:59.871+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:43:59.936+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.180 seconds
+[2026-05-04T04:44:30.131+0000] {processor.py:161} INFO - Started process (PID=4253) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:44:30.133+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:44:30.137+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:44:30.136+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:44:30.164+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:44:30.201+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:44:30.200+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:44:30.224+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:44:30.223+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:44:30.291+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.174 seconds
+[2026-05-04T04:45:00.514+0000] {processor.py:161} INFO - Started process (PID=4321) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:45:00.518+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:45:00.523+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:45:00.522+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:45:00.567+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:45:00.607+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:45:00.607+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:45:00.632+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:45:00.631+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:45:00.673+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.177 seconds
+[2026-05-04T04:45:30.889+0000] {processor.py:161} INFO - Started process (PID=4389) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:45:30.893+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:45:30.898+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:45:30.897+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:45:30.938+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:45:30.975+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:45:30.974+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:45:30.996+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:45:30.995+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:45:31.032+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.163 seconds
+[2026-05-04T04:46:01.541+0000] {processor.py:161} INFO - Started process (PID=4464) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:46:01.546+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:46:01.550+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:46:01.550+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:46:01.598+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:46:01.635+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:46:01.635+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:46:01.663+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:46:01.663+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:46:01.793+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.263 seconds
+[2026-05-04T04:46:32.082+0000] {processor.py:161} INFO - Started process (PID=4532) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:46:32.084+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:46:32.088+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:46:32.088+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:46:32.125+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:46:32.175+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:46:32.175+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:46:32.204+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:46:32.204+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:46:32.277+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.206 seconds
+[2026-05-04T04:47:02.959+0000] {processor.py:161} INFO - Started process (PID=4600) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:47:02.961+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:47:02.964+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:47:02.963+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:47:02.991+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:47:03.029+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:47:03.029+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:47:03.053+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:47:03.053+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:47:03.092+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.147 seconds
+[2026-05-04T04:47:33.495+0000] {processor.py:161} INFO - Started process (PID=4668) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:47:33.497+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:47:33.502+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:47:33.502+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:47:33.542+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:47:33.587+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:47:33.586+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:47:33.614+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:47:33.613+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:47:33.679+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.196 seconds
+[2026-05-04T04:48:04.567+0000] {processor.py:161} INFO - Started process (PID=4736) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:48:04.570+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:48:04.575+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:48:04.574+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:48:04.617+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:48:04.673+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:48:04.672+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:48:04.702+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:48:04.701+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:48:04.738+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.192 seconds
+[2026-05-04T04:49:26.284+0000] {processor.py:161} INFO - Started process (PID=44) to work on /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:49:26.285+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/moex_loader_dag.py for tasks to queue
+[2026-05-04T04:49:26.288+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:49:26.287+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:49:26.310+0000] {processor.py:840} INFO - DAG(s) 'moex_candles_loader' retrieved from /opt/airflow/dags/moex_loader_dag.py
+[2026-05-04T04:49:26.354+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:49:26.353+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-04T04:49:26.364+0000] {logging_mixin.py:188} INFO - [2026-05-04T04:49:26.363+0000] {dag.py:3947} INFO - Setting next_dagrun for moex_candles_loader to None, run_after=None
+[2026-05-04T04:49:26.390+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/moex_loader_dag.py took 0.110 seconds

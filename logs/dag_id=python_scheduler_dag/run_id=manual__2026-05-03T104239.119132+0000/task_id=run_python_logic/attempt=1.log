@@ -1,0 +1,28 @@
+[2026-05-03T10:42:40.658+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: python_scheduler_dag.run_python_logic manual__2026-05-03T10:42:39.119132+00:00 [queued]>
+[2026-05-03T10:42:40.677+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: python_scheduler_dag.run_python_logic manual__2026-05-03T10:42:39.119132+00:00 [queued]>
+[2026-05-03T10:42:40.678+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2026-05-03T10:42:40.681+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 4
+[2026-05-03T10:42:40.682+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2026-05-03T10:42:40.711+0000] {taskinstance.py:1300} INFO - Executing <Task(_PythonDecoratedOperator): run_python_logic> on 2026-05-03 10:42:39.119132+00:00
+[2026-05-03T10:42:40.721+0000] {standard_task_runner.py:55} INFO - Started process 1534 to run task
+[2026-05-03T10:42:40.728+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'python_scheduler_dag', 'run_python_logic', 'manual__2026-05-03T10:42:39.119132+00:00', '--job-id', '18', '--raw', '--subdir', 'DAGS_FOLDER/schedule_dag.py', '--cfg-path', '/tmp/tmp1wotel_8']
+[2026-05-03T10:42:40.730+0000] {standard_task_runner.py:83} INFO - Job 18: Subtask run_python_logic
+[2026-05-03T10:42:40.883+0000] {task_command.py:388} INFO - Running <TaskInstance: python_scheduler_dag.run_python_logic manual__2026-05-03T10:42:39.119132+00:00 [running]> on host f0cb804c8e87
+[2026-05-03T10:42:41.027+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=python_scheduler_dag
+AIRFLOW_CTX_TASK_ID=run_python_logic
+AIRFLOW_CTX_EXECUTION_DATE=2026-05-03T10:42:39.119132+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2026-05-03T10:42:39.119132+00:00
+[2026-05-03T10:42:41.030+0000] {logging_mixin.py:137} INFO - 🚀 Запуск задачи...
+[2026-05-03T10:42:41.032+0000] {logging_mixin.py:137} INFO - Python version: 3.7.16 (default, Jan 18 2023, 03:29:28) 
+[GCC 10.2.1 20210110]
+[2026-05-03T10:42:41.033+0000] {logging_mixin.py:137} INFO - Working directory: /opt/***
+[2026-05-03T10:42:41.034+0000] {logging_mixin.py:137} INFO - ✅ Результат: {'status': 'success', 'timestamp': '2026-05-03T10:42:41.034075'}
+[2026-05-03T10:42:41.035+0000] {python.py:177} INFO - Done. Returned value was: {'status': 'success', 'timestamp': '2026-05-03T10:42:41.034075'}
+[2026-05-03T10:42:41.085+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=python_scheduler_dag, task_id=run_python_logic, execution_date=20260503T104239, start_date=20260503T104240, end_date=20260503T104241
+[2026-05-03T10:42:41.143+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2026-05-03T10:42:41.175+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check
