@@ -1,0 +1,84 @@
+[2026-05-13T19:54:33.251+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-13T19:54:33.302+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: moex_candles_loader.run_feature_engineering manual__2026-05-13T16:56:51.811103+00:00 [queued]>
+[2026-05-13T19:54:33.320+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: moex_candles_loader.run_feature_engineering manual__2026-05-13T16:56:51.811103+00:00 [queued]>
+[2026-05-13T19:54:33.323+0000] {taskinstance.py:2306} INFO - Starting attempt 4 of 4
+[2026-05-13T19:54:33.355+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_feature_engineering> on 2026-05-13 16:56:51.811103+00:00
+[2026-05-13T19:54:33.373+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=17402) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-05-13T19:54:33.379+0000] {standard_task_runner.py:64} INFO - Started process 17411 to run task
+[2026-05-13T19:54:33.379+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'moex_candles_loader', 'run_feature_engineering', 'manual__2026-05-13T16:56:51.811103+00:00', '--job-id', '68', '--raw', '--subdir', 'DAGS_FOLDER/moex_loader_dag.py', '--cfg-path', '/tmp/tmpzqst1l19']
+[2026-05-13T19:54:33.386+0000] {standard_task_runner.py:91} INFO - Job 68: Subtask run_feature_engineering
+[2026-05-13T19:54:33.514+0000] {task_command.py:426} INFO - Running <TaskInstance: moex_candles_loader.run_feature_engineering manual__2026-05-13T16:56:51.811103+00:00 [running]> on host ef4f4778eb40
+[2026-05-13T19:54:33.692+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='moex_candles_loader' AIRFLOW_CTX_TASK_ID='run_feature_engineering' AIRFLOW_CTX_EXECUTION_DATE='2026-05-13T16:56:51.811103+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-13T16:56:51.811103+00:00'
+[2026-05-13T19:54:33.695+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-13T19:54:33.697+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-05-13T19:54:33.699+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/scripts/feature_engineering_loader.py']
+[2026-05-13T19:54:33.720+0000] {subprocess.py:86} INFO - Output:
+[2026-05-13T19:54:42.614+0000] {subprocess.py:93} INFO - [1/7] Очистка старых объектов...
+[2026-05-13T19:54:42.616+0000] {subprocess.py:93} INFO -     ✓ DROP VIEW minio.feature_data_gazp_agg.v_candle_features
+[2026-05-13T19:54:42.617+0000] {subprocess.py:93} INFO -     ✓ DROP VIEW minio.feature_data_gazp_agg.v_rsi
+[2026-05-13T19:54:42.617+0000] {subprocess.py:93} INFO -     ✓ DROP VIEW minio.feature_data_gazp_agg.v_macd
+[2026-05-13T19:54:42.618+0000] {subprocess.py:93} INFO -     ✓ DROP VIEW minio.feature_data_gazp_agg.v_volume_bb_atr
+[2026-05-13T19:54:42.619+0000] {subprocess.py:93} INFO -     ✓ DROP VIEW minio.feature_data_gazp_agg.v_superset_dashboard
+[2026-05-13T19:54:42.619+0000] {subprocess.py:93} INFO -     ✓ DROP TABLE minio.feature_data_gazp_agg.features
+[2026-05-13T19:54:42.620+0000] {subprocess.py:93} INFO -     ✓ DROP TABLE minio.feature_data_gazp_agg.predictions
+[2026-05-13T19:54:42.622+0000] {subprocess.py:93} INFO -     ✓ DROP TABLE minio.feature_data_gazp_agg.feature_importance
+[2026-05-13T19:54:42.623+0000] {subprocess.py:93} INFO -     ✓ DROP TABLE minio.feature_data_gazp_agg.model_metrics
+[2026-05-13T19:54:42.623+0000] {subprocess.py:93} INFO -     ✓ Старые объекты удалены
+[2026-05-13T19:54:42.624+0000] {subprocess.py:93} INFO - [2/7] Создание схемы...
+[2026-05-13T19:54:42.625+0000] {subprocess.py:93} INFO -     ✓ OK
+[2026-05-13T19:54:42.626+0000] {subprocess.py:93} INFO - [3/7] Создание v_candle_features...
+[2026-05-13T19:54:42.626+0000] {subprocess.py:93} INFO -     ✓ OK
+[2026-05-13T19:54:42.627+0000] {subprocess.py:93} INFO - [4/7] Создание v_rsi...
+[2026-05-13T19:54:42.628+0000] {subprocess.py:93} INFO -     ✓ OK
+[2026-05-13T19:54:42.630+0000] {subprocess.py:93} INFO - [5/7] Создание v_macd...
+[2026-05-13T19:54:42.631+0000] {subprocess.py:93} INFO -     ✓ OK
+[2026-05-13T19:54:42.632+0000] {subprocess.py:93} INFO - [6/7] Создание v_volume_bb_atr...
+[2026-05-13T19:54:42.632+0000] {subprocess.py:93} INFO -     ✓ OK
+[2026-05-13T19:54:42.633+0000] {subprocess.py:93} INFO - [7/7] Создание финальной features...
+[2026-05-13T19:54:42.633+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-05-13T19:54:42.634+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/scripts/feature_engineering_loader.py", line 316, in <module>
+[2026-05-13T19:54:42.635+0000] {subprocess.py:93} INFO -     main()
+[2026-05-13T19:54:42.637+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/scripts/feature_engineering_loader.py", line 303, in main
+[2026-05-13T19:54:42.639+0000] {subprocess.py:93} INFO -     create_features_table()
+[2026-05-13T19:54:42.645+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/scripts/feature_engineering_loader.py", line 210, in create_features_table
+[2026-05-13T19:54:42.646+0000] {subprocess.py:93} INFO -     execute(f"""
+[2026-05-13T19:54:42.647+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/scripts/feature_engineering_loader.py", line 25, in execute
+[2026-05-13T19:54:42.650+0000] {subprocess.py:93} INFO -     cur.execute(sql)
+[2026-05-13T19:54:42.652+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/trino/dbapi.py", line 640, in execute
+[2026-05-13T19:54:42.653+0000] {subprocess.py:93} INFO -     self._iterator = iter(self._query.execute())
+[2026-05-13T19:54:42.654+0000] {subprocess.py:93} INFO -                           ^^^^^^^^^^^^^^^^^^^^^
+[2026-05-13T19:54:42.655+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/trino/client.py", line 938, in execute
+[2026-05-13T19:54:42.655+0000] {subprocess.py:93} INFO -     self._result.rows += self.fetch()
+[2026-05-13T19:54:42.656+0000] {subprocess.py:93} INFO -                          ^^^^^^^^^^^^
+[2026-05-13T19:54:42.657+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/trino/client.py", line 958, in fetch
+[2026-05-13T19:54:42.658+0000] {subprocess.py:93} INFO -     status = self._request.process(response)
+[2026-05-13T19:54:42.659+0000] {subprocess.py:93} INFO -              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-13T19:54:42.660+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/trino/client.py", line 727, in process
+[2026-05-13T19:54:42.662+0000] {subprocess.py:93} INFO -     raise self._process_error(response["error"], response.get("id"))
+[2026-05-13T19:54:42.662+0000] {subprocess.py:93} INFO -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-13T19:54:42.672+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/trino/client.py", line 696, in _process_error
+[2026-05-13T19:54:42.673+0000] {subprocess.py:93} INFO -     raise exceptions.TrinoExternalError(error, query_id)
+[2026-05-13T19:54:42.674+0000] {subprocess.py:93} INFO - trino.exceptions.TrinoExternalError: TrinoExternalError(type=EXTERNAL, name=HIVE_PATH_ALREADY_EXISTS, message="Target directory for table 'feature_data_gazp_agg.features' already exists: s3a://data/feature-data-gazp-agg/features", query_id=20260512_054842_00679_w7d7x)
+[2026-05-13T19:54:42.724+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-05-13T19:54:42.725+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-13T19:54:42.743+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-05-13T19:54:42.751+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=moex_candles_loader, task_id=run_feature_engineering, run_id=manual__2026-05-13T16:56:51.811103+00:00, execution_date=20260513T165651, start_date=20260513T195433, end_date=20260513T195442
+[2026-05-13T19:54:42.776+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 68 for task run_feature_engineering (Bash command failed. The command returned a non-zero exit code 1.; 17411)
+[2026-05-13T19:54:42.816+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-05-13T19:54:42.858+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-13T19:54:42.869+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

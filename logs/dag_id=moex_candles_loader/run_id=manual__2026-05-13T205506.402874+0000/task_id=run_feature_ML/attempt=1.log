@@ -1,0 +1,133 @@
+[2026-05-13T20:57:04.779+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-13T20:57:04.829+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: moex_candles_loader.run_feature_ML manual__2026-05-13T20:55:06.402874+00:00 [queued]>
+[2026-05-13T20:57:04.844+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: moex_candles_loader.run_feature_ML manual__2026-05-13T20:55:06.402874+00:00 [queued]>
+[2026-05-13T20:57:04.846+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-05-13T20:57:04.881+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_feature_ML> on 2026-05-13 20:55:06.402874+00:00
+[2026-05-13T20:57:04.900+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=217) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-05-13T20:57:04.906+0000] {standard_task_runner.py:64} INFO - Started process 219 to run task
+[2026-05-13T20:57:04.905+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'moex_candles_loader', 'run_feature_ML', 'manual__2026-05-13T20:55:06.402874+00:00', '--job-id', '96', '--raw', '--subdir', 'DAGS_FOLDER/moex_loader_dag.py', '--cfg-path', '/tmp/tmp2051us8m']
+[2026-05-13T20:57:04.912+0000] {standard_task_runner.py:91} INFO - Job 96: Subtask run_feature_ML
+[2026-05-13T20:57:05.055+0000] {task_command.py:426} INFO - Running <TaskInstance: moex_candles_loader.run_feature_ML manual__2026-05-13T20:55:06.402874+00:00 [running]> on host ef4f4778eb40
+[2026-05-13T20:57:05.238+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='moex_candles_loader' AIRFLOW_CTX_TASK_ID='run_feature_ML' AIRFLOW_CTX_EXECUTION_DATE='2026-05-13T20:55:06.402874+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-13T20:55:06.402874+00:00'
+[2026-05-13T20:57:05.242+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-13T20:57:05.244+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-05-13T20:57:05.246+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/scripts/gazp_ml_v2.py']
+[2026-05-13T20:57:05.272+0000] {subprocess.py:86} INFO - Output:
+[2026-05-13T21:02:21.128+0000] {subprocess.py:93} INFO - 
+[2026-05-13T21:02:21.131+0000] {subprocess.py:93} INFO - ==================================================
+[2026-05-13T21:02:21.132+0000] {subprocess.py:93} INFO -   РЕЖИМ: ОБУЧЕНИЕ
+[2026-05-13T21:02:21.133+0000] {subprocess.py:93} INFO - ==================================================
+[2026-05-13T21:02:21.134+0000] {subprocess.py:93} INFO - 
+[2026-05-13T21:02:21.135+0000] {subprocess.py:93} INFO - [1] Загружаем из Trino: minio.feature_data_gazp_agg.features
+[2026-05-13T21:02:21.137+0000] {subprocess.py:93} INFO -   Загружаем фичи из minio.feature_data_gazp_agg.features...
+[2026-05-13T21:02:21.137+0000] {subprocess.py:93} INFO -   → 24,767 строк, 7 колонок
+[2026-05-13T21:02:21.138+0000] {subprocess.py:93} INFO - 
+[2026-05-13T21:02:21.139+0000] {subprocess.py:93} INFO -   ⚠  Таблица содержит только 7 колонок.
+[2026-05-13T21:02:21.140+0000] {subprocess.py:93} INFO -      SQL-скрипт (Часть 5) ещё не выполнен полностью.
+[2026-05-13T21:02:21.141+0000] {subprocess.py:93} INFO -      Фичи будут досчитаны локально через pandas.
+[2026-05-13T21:02:21.142+0000] {subprocess.py:93} INFO - 
+[2026-05-13T21:02:21.143+0000] {subprocess.py:93} INFO -   Чтобы исправить — выполни в Trino:
+[2026-05-13T21:02:21.144+0000] {subprocess.py:93} INFO -     DROP TABLE IF EXISTS minio.feature_data_gazp_agg.features;
+[2026-05-13T21:02:21.145+0000] {subprocess.py:93} INFO -     -- затем Часть 5 из gazp_features_minio.sql
+[2026-05-13T21:02:21.146+0000] {subprocess.py:93} INFO - 
+[2026-05-13T21:02:21.147+0000] {subprocess.py:93} INFO -   Загружаем сырые данные из minio.moex_data.gazp_view...
+[2026-05-13T21:02:21.149+0000] {subprocess.py:93} INFO -   → 24,767 строк из minio.moex_data.gazp_view
+[2026-05-13T21:02:21.149+0000] {subprocess.py:93} INFO -   Считаем фичи локально (pandas + ta)...
+[2026-05-13T21:02:21.151+0000] {subprocess.py:93} INFO -   → фичи готовы: 62 колонок
+[2026-05-13T21:02:21.152+0000] {subprocess.py:93} INFO - [2] Данные загружены: 24,767 строк, 62 колонок.
+[2026-05-13T21:02:21.153+0000] {subprocess.py:93} INFO - 
+[2026-05-13T21:02:21.153+0000] {subprocess.py:93} INFO - [3] Подготовка датасета...
+[2026-05-13T21:02:21.154+0000] {subprocess.py:93} INFO -   Train: 19,786 строк  [2020-01-09 — 2025-06-08]
+[2026-05-13T21:02:21.155+0000] {subprocess.py:93} INFO -   Test:  4,947  строк  [2025-06-08 — 2026-05-13]
+[2026-05-13T21:02:21.156+0000] {subprocess.py:93} INFO - 
+[2026-05-13T21:02:21.157+0000] {subprocess.py:93} INFO - [4] Обучение...
+[2026-05-13T21:02:21.158+0000] {subprocess.py:93} INFO -   XGBoost (классификатор ↑↓)...
+[2026-05-13T21:02:21.159+0000] {subprocess.py:93} INFO -   XGBoost (регрессор цены)...
+[2026-05-13T21:02:21.160+0000] {subprocess.py:93} INFO -   Модели → models/
+[2026-05-13T21:02:21.161+0000] {subprocess.py:93} INFO - 
+[2026-05-13T21:02:21.162+0000] {subprocess.py:93} INFO - [5] Оценка...
+[2026-05-13T21:02:21.163+0000] {subprocess.py:93} INFO - 
+[2026-05-13T21:02:21.164+0000] {subprocess.py:93} INFO - ────────────────────────────────────────────────
+[2026-05-13T21:02:21.165+0000] {subprocess.py:93} INFO -   Классификатор  Accuracy: 0.5276  F1: 0.4876  AUC: 0.5364
+[2026-05-13T21:02:21.166+0000] {subprocess.py:93} INFO -   Регрессор      MAE: 0.3934 руб  MAPE: 0.31%
+[2026-05-13T21:02:21.167+0000] {subprocess.py:93} INFO - ────────────────────────────────────────────────
+[2026-05-13T21:02:21.168+0000] {subprocess.py:93} INFO - 
+[2026-05-13T21:02:21.169+0000] {subprocess.py:93} INFO -   Топ-15 признаков:
+[2026-05-13T21:02:21.170+0000] {subprocess.py:93} INFO - hour_of_day          0.032975
+[2026-05-13T21:02:21.171+0000] {subprocess.py:93} INFO - is_premarket         0.031776
+[2026-05-13T21:02:21.173+0000] {subprocess.py:93} INFO - candle_return_pct    0.030744
+[2026-05-13T21:02:21.174+0000] {subprocess.py:93} INFO - close_position       0.028582
+[2026-05-13T21:02:21.175+0000] {subprocess.py:93} INFO - is_high_volume       0.027370
+[2026-05-13T21:02:21.176+0000] {subprocess.py:93} INFO - is_evening           0.027224
+[2026-05-13T21:02:21.176+0000] {subprocess.py:93} INFO - is_morning           0.026742
+[2026-05-13T21:02:21.177+0000] {subprocess.py:93} INFO - macd_zero_cross      0.026519
+[2026-05-13T21:02:21.179+0000] {subprocess.py:93} INFO - rsi_14               0.025918
+[2026-05-13T21:02:21.180+0000] {subprocess.py:93} INFO - rsi_divergence       0.025666
+[2026-05-13T21:02:21.181+0000] {subprocess.py:93} INFO - return_1             0.025616
+[2026-05-13T21:02:21.182+0000] {subprocess.py:93} INFO - vol_ratio_20         0.025528
+[2026-05-13T21:02:21.182+0000] {subprocess.py:93} INFO - macd_pct             0.025495
+[2026-05-13T21:02:21.184+0000] {subprocess.py:93} INFO - return_2             0.025365
+[2026-05-13T21:02:21.185+0000] {subprocess.py:93} INFO - body_ratio           0.025083
+[2026-05-13T21:02:21.186+0000] {subprocess.py:93} INFO - 
+[2026-05-13T21:02:21.187+0000] {subprocess.py:93} INFO - [6] Запись предсказаний в Trino...
+[2026-05-13T21:02:21.188+0000] {subprocess.py:93} INFO -     → 500/4947
+[2026-05-13T21:02:21.188+0000] {subprocess.py:93} INFO -     → 1000/4947
+[2026-05-13T21:02:21.189+0000] {subprocess.py:93} INFO -     → 1500/4947
+[2026-05-13T21:02:21.190+0000] {subprocess.py:93} INFO -     → 2000/4947
+[2026-05-13T21:02:21.191+0000] {subprocess.py:93} INFO -     → 2500/4947
+[2026-05-13T21:02:21.192+0000] {subprocess.py:93} INFO -     → 3000/4947
+[2026-05-13T21:02:21.193+0000] {subprocess.py:93} INFO -     → 3500/4947
+[2026-05-13T21:02:21.194+0000] {subprocess.py:93} INFO -     → 4000/4947
+[2026-05-13T21:02:21.195+0000] {subprocess.py:93} INFO -     → 4500/4947
+[2026-05-13T21:02:21.196+0000] {subprocess.py:93} INFO -     → 4947/4947
+[2026-05-13T21:02:21.197+0000] {subprocess.py:93} INFO -   ✓ 4947 предсказаний записаны в minio.feature_data_gazp_agg.predictions
+[2026-05-13T21:02:21.198+0000] {subprocess.py:93} INFO - 
+[2026-05-13T21:02:21.200+0000] {subprocess.py:93} INFO - ╔══════════════════════════════════════════════════════════════╗
+[2026-05-13T21:02:21.201+0000] {subprocess.py:93} INFO - ║              ДАШБОРД В APACHE SUPERSET                      ║
+[2026-05-13T21:02:21.202+0000] {subprocess.py:93} INFO - ╠══════════════════════════════════════════════════════════════╣
+[2026-05-13T21:02:21.203+0000] {subprocess.py:93} INFO - ║                                                              ║
+[2026-05-13T21:02:21.204+0000] {subprocess.py:93} INFO - ║  ДАТАСЕТ:                                                    ║
+[2026-05-13T21:02:21.205+0000] {subprocess.py:93} INFO - ║    Database : Trino                                          ║
+[2026-05-13T21:02:21.207+0000] {subprocess.py:93} INFO - ║    Schema   : feature_data_gazp_agg   (catalog: minio)      ║
+[2026-05-13T21:02:21.208+0000] {subprocess.py:93} INFO - ║    Table    : v_superset_dashboard                           ║
+[2026-05-13T21:02:21.209+0000] {subprocess.py:93} INFO - ║                                                              ║
+[2026-05-13T21:02:21.209+0000] {subprocess.py:93} INFO - ║  ГРАФИКИ:                                                    ║
+[2026-05-13T21:02:21.210+0000] {subprocess.py:93} INFO - ║  1. Свечной (ECharts Candlestick)                            ║
+[2026-05-13T21:02:21.211+0000] {subprocess.py:93} INFO - ║     x: start_time                                            ║
+[2026-05-13T21:02:21.212+0000] {subprocess.py:93} INFO - ║     Open/High/Low/Close: соответствующие поля               ║
+[2026-05-13T21:02:21.213+0000] {subprocess.py:93} INFO - ║     Доп. серии Line: sma_5, sma_10, sma_20, bb_upper/lower  ║
+[2026-05-13T21:02:21.215+0000] {subprocess.py:93} INFO - ║                                                              ║
+[2026-05-13T21:02:21.216+0000] {subprocess.py:93} INFO - ║  2. RSI (Line Chart)                                         ║
+[2026-05-13T21:02:21.217+0000] {subprocess.py:93} INFO - ║     Metrics: rsi_7, rsi_14, rsi_21                          ║
+[2026-05-13T21:02:21.218+0000] {subprocess.py:93} INFO - ║     Annotations: горизонтальные линии на 30 и 70            ║
+[2026-05-13T21:02:21.219+0000] {subprocess.py:93} INFO - ║                                                              ║
+[2026-05-13T21:02:21.220+0000] {subprocess.py:93} INFO - ║  3. MACD (Mixed Chart = Bar + Line)                          ║
+[2026-05-13T21:02:21.221+0000] {subprocess.py:93} INFO - ║     Bar:  macd_hist  (цвет через Conditional Formatting)    ║
+[2026-05-13T21:02:21.222+0000] {subprocess.py:93} INFO - ║     Line: macd, macd_signal                                  ║
+[2026-05-13T21:02:21.223+0000] {subprocess.py:93} INFO - ║                                                              ║
+[2026-05-13T21:02:21.224+0000] {subprocess.py:93} INFO - ║  4. Объём (Bar Chart)                                        ║
+[2026-05-13T21:02:21.225+0000] {subprocess.py:93} INFO - ║     Metric: volume, Цвет: candle_color                       ║
+[2026-05-13T21:02:21.226+0000] {subprocess.py:93} INFO - ║                                                              ║
+[2026-05-13T21:02:21.228+0000] {subprocess.py:93} INFO - ║  5. Тепловая карта признаков (Heatmap)                       ║
+[2026-05-13T21:02:21.230+0000] {subprocess.py:93} INFO - ║     x: trade_date, y: признак, value: значение              ║
+[2026-05-13T21:02:21.231+0000] {subprocess.py:93} INFO - ║     Признаки: body_ratio, rsi_14, macd_hist,                ║
+[2026-05-13T21:02:21.232+0000] {subprocess.py:93} INFO - ║               bb_pct_b, atr_pct, vol_ratio_20               ║
+[2026-05-13T21:02:21.233+0000] {subprocess.py:93} INFO - ║                                                              ║
+[2026-05-13T21:02:21.234+0000] {subprocess.py:93} INFO - ║  6. Сигналы модели (Table)                                   ║
+[2026-05-13T21:02:21.235+0000] {subprocess.py:93} INFO - ║     Columns: start_time, close_price, signal,               ║
+[2026-05-13T21:02:21.236+0000] {subprocess.py:93} INFO - ║              pred_proba_up, tp_level, sl_level              ║
+[2026-05-13T21:02:21.237+0000] {subprocess.py:93} INFO - ║     Filter: signal IN ('BUY','SELL')                        ║
+[2026-05-13T21:02:21.238+0000] {subprocess.py:93} INFO - ║                                                              ║
+[2026-05-13T21:02:21.265+0000] {subprocess.py:93} INFO - ║  ВРЕМЕННОЙ ФИЛЬТР:                                           ║
+[2026-05-13T21:02:21.267+0000] {subprocess.py:93} INFO - ║     Dashboard → Add Filter → Time Range → start_time        ║
+[2026-05-13T21:02:21.268+0000] {subprocess.py:93} INFO - ║                                                              ║
+[2026-05-13T21:02:21.269+0000] {subprocess.py:93} INFO - ╚══════════════════════════════════════════════════════════════╝
+[2026-05-13T21:02:21.270+0000] {subprocess.py:93} INFO - 
+[2026-05-13T21:02:21.524+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-05-13T21:02:21.529+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-13T21:02:21.577+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=moex_candles_loader, task_id=run_feature_ML, run_id=manual__2026-05-13T20:55:06.402874+00:00, execution_date=20260513T205506, start_date=20260513T205704, end_date=20260513T210221
+[2026-05-13T21:02:21.634+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-05-13T21:02:21.661+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-13T21:02:21.668+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

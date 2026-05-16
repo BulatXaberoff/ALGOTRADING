@@ -1,0 +1,38 @@
+[2026-05-13T23:35:46.360+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-13T23:35:46.395+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: moex_candles_loader.run_candles_loader manual__2026-05-13T23:35:43.498341+00:00 [queued]>
+[2026-05-13T23:35:46.407+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: moex_candles_loader.run_candles_loader manual__2026-05-13T23:35:43.498341+00:00 [queued]>
+[2026-05-13T23:35:46.408+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-05-13T23:35:46.435+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_candles_loader> on 2026-05-13 23:35:43.498341+00:00
+[2026-05-13T23:35:46.447+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=3102) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-05-13T23:35:46.451+0000] {standard_task_runner.py:64} INFO - Started process 3104 to run task
+[2026-05-13T23:35:46.450+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'moex_candles_loader', 'run_candles_loader', 'manual__2026-05-13T23:35:43.498341+00:00', '--job-id', '129', '--raw', '--subdir', 'DAGS_FOLDER/moex_loader_dag.py', '--cfg-path', '/tmp/tmp_5k54pmt']
+[2026-05-13T23:35:46.454+0000] {standard_task_runner.py:91} INFO - Job 129: Subtask run_candles_loader
+[2026-05-13T23:35:46.567+0000] {task_command.py:426} INFO - Running <TaskInstance: moex_candles_loader.run_candles_loader manual__2026-05-13T23:35:43.498341+00:00 [running]> on host ef4f4778eb40
+[2026-05-13T23:35:46.860+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='moex_candles_loader' AIRFLOW_CTX_TASK_ID='run_candles_loader' AIRFLOW_CTX_EXECUTION_DATE='2026-05-13T23:35:43.498341+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-13T23:35:43.498341+00:00'
+[2026-05-13T23:35:46.864+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-13T23:35:46.867+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-05-13T23:35:46.869+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/scripts/candles_loader.py']
+[2026-05-13T23:35:46.891+0000] {subprocess.py:86} INFO - Output:
+[2026-05-13T23:37:03.452+0000] {subprocess.py:93} INFO - 🚀 Старт загрузки свечей | 2026-05-13 23:35:49
+[2026-05-13T23:37:03.456+0000] {subprocess.py:93} INFO - 📥 Загружаем GAZP
+[2026-05-13T23:37:03.458+0000] {subprocess.py:93} INFO - ✅ [GAZP] сохранен
+[2026-05-13T23:37:03.459+0000] {subprocess.py:93} INFO - ☁️ S3: s3://data/moex-data/moex/candles/GAZP/GAZP_1h_20260513_233549.parquet
+[2026-05-13T23:37:03.461+0000] {subprocess.py:93} INFO - ------------------------------------------------------------
+[2026-05-13T23:37:03.463+0000] {subprocess.py:93} INFO - 📥 Загружаем SBER
+[2026-05-13T23:37:03.464+0000] {subprocess.py:93} INFO - ✅ [SBER] сохранен
+[2026-05-13T23:37:03.465+0000] {subprocess.py:93} INFO - ☁️ S3: s3://data/moex-data/moex/candles/SBER/SBER_1h_20260513_233549.parquet
+[2026-05-13T23:37:03.466+0000] {subprocess.py:93} INFO - ------------------------------------------------------------
+[2026-05-13T23:37:03.467+0000] {subprocess.py:93} INFO - 📥 Загружаем LKOH
+[2026-05-13T23:37:03.468+0000] {subprocess.py:93} INFO - ✅ [LKOH] сохранен
+[2026-05-13T23:37:03.469+0000] {subprocess.py:93} INFO - ☁️ S3: s3://data/moex-data/moex/candles/LKOH/LKOH_1h_20260513_233549.parquet
+[2026-05-13T23:37:03.469+0000] {subprocess.py:93} INFO - ------------------------------------------------------------
+[2026-05-13T23:37:03.470+0000] {subprocess.py:93} INFO - 
+[2026-05-13T23:37:03.471+0000] {subprocess.py:93} INFO - 🎯 Готово. Обработано инструментов: 3
+[2026-05-13T23:37:03.871+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-05-13T23:37:03.874+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-13T23:37:03.954+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=moex_candles_loader, task_id=run_candles_loader, run_id=manual__2026-05-13T23:35:43.498341+00:00, execution_date=20260513T233543, start_date=20260513T233546, end_date=20260513T233703
+[2026-05-13T23:37:03.999+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-05-13T23:37:04.044+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-05-13T23:37:04.053+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

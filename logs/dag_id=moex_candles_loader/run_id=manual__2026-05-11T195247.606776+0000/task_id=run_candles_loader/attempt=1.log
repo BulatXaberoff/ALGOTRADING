@@ -1,0 +1,26 @@
+[2026-05-11T19:52:51.887+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-11T19:52:51.940+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: moex_candles_loader.run_candles_loader manual__2026-05-11T19:52:47.606776+00:00 [queued]>
+[2026-05-11T19:52:51.960+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: moex_candles_loader.run_candles_loader manual__2026-05-11T19:52:47.606776+00:00 [queued]>
+[2026-05-11T19:52:51.963+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-05-11T19:52:51.999+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_candles_loader> on 2026-05-11 19:52:47.606776+00:00
+[2026-05-11T19:52:52.016+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=214) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-05-11T19:52:52.022+0000] {standard_task_runner.py:64} INFO - Started process 216 to run task
+[2026-05-11T19:52:52.020+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'moex_candles_loader', 'run_candles_loader', 'manual__2026-05-11T19:52:47.606776+00:00', '--job-id', '43', '--raw', '--subdir', 'DAGS_FOLDER/moex_loader_dag.py', '--cfg-path', '/tmp/tmp_2y08iwg']
+[2026-05-11T19:52:52.027+0000] {standard_task_runner.py:91} INFO - Job 43: Subtask run_candles_loader
+[2026-05-11T19:52:52.166+0000] {task_command.py:426} INFO - Running <TaskInstance: moex_candles_loader.run_candles_loader manual__2026-05-11T19:52:47.606776+00:00 [running]> on host 42e42b0080d5
+[2026-05-11T19:52:52.377+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='moex_candles_loader' AIRFLOW_CTX_TASK_ID='run_candles_loader' AIRFLOW_CTX_EXECUTION_DATE='2026-05-11T19:52:47.606776+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-11T19:52:47.606776+00:00'
+[2026-05-11T19:52:52.384+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-11T19:52:52.386+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-05-11T19:52:52.389+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/scripts/candles_loader.py']
+[2026-05-11T19:52:52.417+0000] {subprocess.py:86} INFO - Output:
+[2026-05-11T19:53:02.104+0000] {local_task_job_runner.py:313} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2026-05-11T19:53:02.107+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-05-11T19:53:02.110+0000] {process_utils.py:132} INFO - Sending 15 to group 216. PIDs of all processes in the group: [217, 216]
+[2026-05-11T19:53:02.111+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 216
+[2026-05-11T19:53:02.113+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2026-05-11T19:53:02.114+0000] {subprocess.py:104} INFO - Sending SIGTERM signal to process group
+[2026-05-11T19:53:02.115+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-11T19:53:02.167+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=216, status='terminated', exitcode=0, started='19:52:51') (216) terminated with exit code 0
+[2026-05-11T19:53:02.170+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=217, status='terminated', started='19:52:51') (217) terminated with exit code None

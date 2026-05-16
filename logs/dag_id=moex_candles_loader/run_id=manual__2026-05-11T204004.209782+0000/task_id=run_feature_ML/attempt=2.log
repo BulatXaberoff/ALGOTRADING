@@ -1,0 +1,68 @@
+[2026-05-11T20:41:21.138+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-11T20:41:21.173+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: moex_candles_loader.run_feature_ML manual__2026-05-11T20:40:04.209782+00:00 [queued]>
+[2026-05-11T20:41:21.185+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: moex_candles_loader.run_feature_ML manual__2026-05-11T20:40:04.209782+00:00 [queued]>
+[2026-05-11T20:41:21.186+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2026-05-11T20:41:21.212+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_feature_ML> on 2026-05-11 20:40:04.209782+00:00
+[2026-05-11T20:41:21.223+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=418) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-05-11T20:41:21.226+0000] {standard_task_runner.py:64} INFO - Started process 420 to run task
+[2026-05-11T20:41:21.226+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'moex_candles_loader', 'run_feature_ML', 'manual__2026-05-11T20:40:04.209782+00:00', '--job-id', '57', '--raw', '--subdir', 'DAGS_FOLDER/moex_loader_dag.py', '--cfg-path', '/tmp/tmpvywih09u']
+[2026-05-11T20:41:21.230+0000] {standard_task_runner.py:91} INFO - Job 57: Subtask run_feature_ML
+[2026-05-11T20:41:21.336+0000] {task_command.py:426} INFO - Running <TaskInstance: moex_candles_loader.run_feature_ML manual__2026-05-11T20:40:04.209782+00:00 [running]> on host ef4f4778eb40
+[2026-05-11T20:41:21.474+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='moex_candles_loader' AIRFLOW_CTX_TASK_ID='run_feature_ML' AIRFLOW_CTX_EXECUTION_DATE='2026-05-11T20:40:04.209782+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-11T20:40:04.209782+00:00'
+[2026-05-11T20:41:21.477+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-11T20:41:21.479+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-05-11T20:41:21.481+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/scripts/gazp_ml_v2.py']
+[2026-05-11T20:41:21.500+0000] {subprocess.py:86} INFO - Output:
+[2026-05-11T20:41:23.346+0000] {subprocess.py:93} INFO - 
+[2026-05-11T20:41:23.351+0000] {subprocess.py:93} INFO - =======================================================
+[2026-05-11T20:41:23.353+0000] {subprocess.py:93} INFO -  GAZP ML Pipeline v2  |  GAZP  |  2026-05-11 20:41
+[2026-05-11T20:41:23.354+0000] {subprocess.py:93} INFO - =======================================================
+[2026-05-11T20:41:23.355+0000] {subprocess.py:93} INFO - 
+[2026-05-11T20:41:23.356+0000] {subprocess.py:93} INFO - [Trino] Загружаем свечи GAZP...
+[2026-05-11T20:41:23.357+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-05-11T20:41:23.358+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/scripts/gazp_ml_v2.py", line 737, in <module>
+[2026-05-11T20:41:23.363+0000] {subprocess.py:93} INFO -     clf, reg, df = run(
+[2026-05-11T20:41:23.364+0000] {subprocess.py:93} INFO -                    ^^^^
+[2026-05-11T20:41:23.365+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/scripts/gazp_ml_v2.py", line 694, in run
+[2026-05-11T20:41:23.373+0000] {subprocess.py:93} INFO -     df = load_raw_candles(ticker, start_date, end_date)
+[2026-05-11T20:41:23.375+0000] {subprocess.py:93} INFO -          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-11T20:41:23.376+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/scripts/gazp_ml_v2.py", line 171, in load_raw_candles
+[2026-05-11T20:41:23.379+0000] {subprocess.py:93} INFO -     df = trino_read(sql)
+[2026-05-11T20:41:23.380+0000] {subprocess.py:93} INFO -          ^^^^^^^^^^^^^^^
+[2026-05-11T20:41:23.381+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/scripts/gazp_ml_v2.py", line 79, in trino_read
+[2026-05-11T20:41:23.385+0000] {subprocess.py:93} INFO -     cur.execute(sql)
+[2026-05-11T20:41:23.386+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/trino/dbapi.py", line 640, in execute
+[2026-05-11T20:41:23.386+0000] {subprocess.py:93} INFO -     self._iterator = iter(self._query.execute())
+[2026-05-11T20:41:23.388+0000] {subprocess.py:93} INFO -                           ^^^^^^^^^^^^^^^^^^^^^
+[2026-05-11T20:41:23.389+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/trino/client.py", line 938, in execute
+[2026-05-11T20:41:23.390+0000] {subprocess.py:93} INFO -     self._result.rows += self.fetch()
+[2026-05-11T20:41:23.391+0000] {subprocess.py:93} INFO -                          ^^^^^^^^^^^^
+[2026-05-11T20:41:23.392+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/trino/client.py", line 958, in fetch
+[2026-05-11T20:41:23.393+0000] {subprocess.py:93} INFO -     status = self._request.process(response)
+[2026-05-11T20:41:23.394+0000] {subprocess.py:93} INFO -              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-11T20:41:23.396+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/trino/client.py", line 727, in process
+[2026-05-11T20:41:23.398+0000] {subprocess.py:93} INFO -     raise self._process_error(response["error"], response.get("id"))
+[2026-05-11T20:41:23.398+0000] {subprocess.py:93} INFO - trino.exceptions.TrinoUserError: TrinoUserError(type=USER_ERROR, name=TABLE_NOT_FOUND, message="line 10:10: Table 'minio.moex_data.v_candle_features' does not exist", query_id=20260511_204124_00179_w7d7x)
+[2026-05-11T20:41:23.608+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-05-11T20:41:23.610+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-11T20:41:23.627+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-05-11T20:41:23.636+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=moex_candles_loader, task_id=run_feature_ML, run_id=manual__2026-05-11T20:40:04.209782+00:00, execution_date=20260511T204004, start_date=20260511T204121, end_date=20260511T204123
+[2026-05-11T20:41:23.690+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 57 for task run_feature_ML (Bash command failed. The command returned a non-zero exit code 1.; 420)
+[2026-05-11T20:41:23.734+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-05-11T20:41:23.768+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-11T20:41:23.778+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

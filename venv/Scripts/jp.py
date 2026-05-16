@@ -1,4 +1,4 @@
-#!C:\Users\bulyn\OneDrive\Рабочий стол\Airflow\venv\Scripts\python.exe
+#!D:\ALGOTRADING\venv\Scripts\python.exe
 
 import sys
 import json

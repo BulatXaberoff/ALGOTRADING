@@ -1,0 +1,123 @@
+[2026-05-13T22:21:59.591+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-13T22:21:59.643+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: moex_candles_loader.run_feature_ML manual__2026-05-13T22:15:28.489482+00:00 [queued]>
+[2026-05-13T22:21:59.660+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: moex_candles_loader.run_feature_ML manual__2026-05-13T22:15:28.489482+00:00 [queued]>
+[2026-05-13T22:21:59.662+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2026-05-13T22:21:59.697+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_feature_ML> on 2026-05-13 22:15:28.489482+00:00
+[2026-05-13T22:21:59.715+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=408) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-05-13T22:21:59.721+0000] {standard_task_runner.py:64} INFO - Started process 410 to run task
+[2026-05-13T22:21:59.720+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'moex_candles_loader', 'run_feature_ML', 'manual__2026-05-13T22:15:28.489482+00:00', '--job-id', '118', '--raw', '--subdir', 'DAGS_FOLDER/moex_loader_dag.py', '--cfg-path', '/tmp/tmpfp0a80g2']
+[2026-05-13T22:21:59.727+0000] {standard_task_runner.py:91} INFO - Job 118: Subtask run_feature_ML
+[2026-05-13T22:21:59.879+0000] {task_command.py:426} INFO - Running <TaskInstance: moex_candles_loader.run_feature_ML manual__2026-05-13T22:15:28.489482+00:00 [running]> on host ef4f4778eb40
+[2026-05-13T22:22:00.031+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='moex_candles_loader' AIRFLOW_CTX_TASK_ID='run_feature_ML' AIRFLOW_CTX_EXECUTION_DATE='2026-05-13T22:15:28.489482+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-13T22:15:28.489482+00:00'
+[2026-05-13T22:22:00.036+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-13T22:22:00.037+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-05-13T22:22:00.040+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/scripts/gazp_ml_v2.py']
+[2026-05-13T22:22:00.059+0000] {subprocess.py:86} INFO - Output:
+[2026-05-13T22:25:43.567+0000] {subprocess.py:93} INFO - 
+[2026-05-13T22:25:43.569+0000] {subprocess.py:93} INFO - ==================================================
+[2026-05-13T22:25:43.571+0000] {subprocess.py:93} INFO -   РЕЖИМ: ОБУЧЕНИЕ
+[2026-05-13T22:25:43.572+0000] {subprocess.py:93} INFO - ==================================================
+[2026-05-13T22:25:43.573+0000] {subprocess.py:93} INFO - 
+[2026-05-13T22:25:43.574+0000] {subprocess.py:93} INFO - [1] Загружаем из Trino: minio.feature_data_gazp_agg.features
+[2026-05-13T22:25:43.574+0000] {subprocess.py:93} INFO -   Загружаем фичи из minio.feature_data_gazp_agg.features...
+[2026-05-13T22:25:43.575+0000] {subprocess.py:93} INFO -   -> 24,769 строк, 7 колонок
+[2026-05-13T22:25:43.575+0000] {subprocess.py:93} INFO -   Загружаем сырые данные из minio.moex_data.gazp_view...
+[2026-05-13T22:25:43.576+0000] {subprocess.py:93} INFO -   -> 24,769 строк из minio.moex_data.gazp_view
+[2026-05-13T22:25:43.577+0000] {subprocess.py:93} INFO -   Считаем фичи локально...
+[2026-05-13T22:25:43.579+0000] {subprocess.py:93} INFO -   -> фичи готовы: 57 колонок
+[2026-05-13T22:25:43.580+0000] {subprocess.py:93} INFO - [2] Данные загружены: 24,769 строк, 57 колонок.
+[2026-05-13T22:25:43.581+0000] {subprocess.py:93} INFO - 
+[2026-05-13T22:25:43.583+0000] {subprocess.py:93} INFO - [3] Подготовка датасета...
+[2026-05-13T22:25:43.586+0000] {subprocess.py:93} INFO -   Train: 19,788 строк  [2020-01-09 - 2025-06-08]
+[2026-05-13T22:25:43.587+0000] {subprocess.py:93} INFO -   Test:  4,947  строк  [2025-06-08 - 2026-05-13]
+[2026-05-13T22:25:43.588+0000] {subprocess.py:93} INFO - 
+[2026-05-13T22:25:43.588+0000] {subprocess.py:93} INFO - [4] Обучение...
+[2026-05-13T22:25:43.589+0000] {subprocess.py:93} INFO -   XGBoost (классификатор)...
+[2026-05-13T22:25:43.589+0000] {subprocess.py:93} INFO -   XGBoost (регрессор цены)...
+[2026-05-13T22:25:43.589+0000] {subprocess.py:93} INFO -   Модели -> models/
+[2026-05-13T22:25:43.590+0000] {subprocess.py:93} INFO - 
+[2026-05-13T22:25:43.592+0000] {subprocess.py:93} INFO - [5] Оценка...
+[2026-05-13T22:25:43.592+0000] {subprocess.py:93} INFO - 
+[2026-05-13T22:25:43.593+0000] {subprocess.py:93} INFO - ================================================
+[2026-05-13T22:25:43.594+0000] {subprocess.py:93} INFO -   Классификатор  Accuracy: 0.5294  F1: 0.4766  AUC: 0.5361
+[2026-05-13T22:25:43.594+0000] {subprocess.py:93} INFO -   Регрессор      MAE: 0.3924 руб  MAPE: 0.31%
+[2026-05-13T22:25:43.595+0000] {subprocess.py:93} INFO - ================================================
+[2026-05-13T22:25:43.596+0000] {subprocess.py:93} INFO - 
+[2026-05-13T22:25:43.597+0000] {subprocess.py:93} INFO -   Топ-15 признаков:
+[2026-05-13T22:25:43.597+0000] {subprocess.py:93} INFO - rsi_zone_code        0.033323
+[2026-05-13T22:25:43.598+0000] {subprocess.py:93} INFO - hour_of_day          0.032929
+[2026-05-13T22:25:43.599+0000] {subprocess.py:93} INFO - is_premarket         0.029129
+[2026-05-13T22:25:43.599+0000] {subprocess.py:93} INFO - is_high_volume       0.027885
+[2026-05-13T22:25:43.600+0000] {subprocess.py:93} INFO - close_position       0.027832
+[2026-05-13T22:25:43.600+0000] {subprocess.py:93} INFO - candle_return_pct    0.027276
+[2026-05-13T22:25:43.601+0000] {subprocess.py:93} INFO - is_evening           0.026339
+[2026-05-13T22:25:43.602+0000] {subprocess.py:93} INFO - is_bullish           0.025981
+[2026-05-13T22:25:43.603+0000] {subprocess.py:93} INFO - rsi_14               0.025874
+[2026-05-13T22:25:43.603+0000] {subprocess.py:93} INFO - is_morning           0.025183
+[2026-05-13T22:25:43.604+0000] {subprocess.py:93} INFO - is_midday            0.025142
+[2026-05-13T22:25:43.604+0000] {subprocess.py:93} INFO - return_1             0.024928
+[2026-05-13T22:25:43.605+0000] {subprocess.py:93} INFO - return_2             0.024900
+[2026-05-13T22:25:43.605+0000] {subprocess.py:93} INFO - sma_5                0.024641
+[2026-05-13T22:25:43.605+0000] {subprocess.py:93} INFO - atr_14               0.024569
+[2026-05-13T22:25:43.606+0000] {subprocess.py:93} INFO - 
+[2026-05-13T22:25:43.606+0000] {subprocess.py:93} INFO - [6] Запись предсказаний в Trino...
+[2026-05-13T22:25:43.606+0000] {subprocess.py:93} INFO -     -> 500/4947
+[2026-05-13T22:25:43.606+0000] {subprocess.py:93} INFO -     -> 1000/4947
+[2026-05-13T22:25:43.607+0000] {subprocess.py:93} INFO -     -> 1500/4947
+[2026-05-13T22:25:43.607+0000] {subprocess.py:93} INFO -     -> 2000/4947
+[2026-05-13T22:25:43.608+0000] {subprocess.py:93} INFO -     -> 2500/4947
+[2026-05-13T22:25:43.608+0000] {subprocess.py:93} INFO -     -> 3000/4947
+[2026-05-13T22:25:43.608+0000] {subprocess.py:93} INFO -     -> 3500/4947
+[2026-05-13T22:25:43.609+0000] {subprocess.py:93} INFO -     -> 4000/4947
+[2026-05-13T22:25:43.609+0000] {subprocess.py:93} INFO -     -> 4500/4947
+[2026-05-13T22:25:43.609+0000] {subprocess.py:93} INFO -     -> 4947/4947
+[2026-05-13T22:25:43.609+0000] {subprocess.py:93} INFO -   -> 4947 предсказаний записаны в minio.feature_data_gazp_agg.predictions
+[2026-05-13T22:25:43.610+0000] {subprocess.py:93} INFO - 
+[2026-05-13T22:25:43.610+0000] {subprocess.py:93} INFO - [7] Запись важности признаков в Trino...
+[2026-05-13T22:25:43.610+0000] {subprocess.py:93} INFO -   -> Важность признаков записана: 41 строк -> minio.feature_data_gazp_agg.feature_importance
+[2026-05-13T22:25:43.610+0000] {subprocess.py:93} INFO - 
+[2026-05-13T22:25:43.611+0000] {subprocess.py:93} INFO - [8] Запись метрик модели в Trino...
+[2026-05-13T22:25:43.611+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-05-13T22:25:43.612+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/scripts/gazp_ml_v2.py", line 561, in <module>
+[2026-05-13T22:25:43.612+0000] {subprocess.py:93} INFO -     run_train(csv_path=args.csv)
+[2026-05-13T22:25:43.612+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/scripts/gazp_ml_v2.py", line 510, in run_train
+[2026-05-13T22:25:43.613+0000] {subprocess.py:93} INFO -     write_model_metrics(metrics)
+[2026-05-13T22:25:43.613+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/scripts/gazp_ml_v2.py", line 417, in write_model_metrics
+[2026-05-13T22:25:43.613+0000] {subprocess.py:93} INFO -     trino_execute(f"""
+[2026-05-13T22:25:43.614+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/scripts/gazp_ml_v2.py", line 90, in trino_execute
+[2026-05-13T22:25:43.614+0000] {subprocess.py:93} INFO -     cur.execute(sql)
+[2026-05-13T22:25:43.615+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/trino/dbapi.py", line 640, in execute
+[2026-05-13T22:25:43.615+0000] {subprocess.py:93} INFO -     self._iterator = iter(self._query.execute())
+[2026-05-13T22:25:43.615+0000] {subprocess.py:93} INFO -                           ^^^^^^^^^^^^^^^^^^^^^
+[2026-05-13T22:25:43.616+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/trino/client.py", line 938, in execute
+[2026-05-13T22:25:43.616+0000] {subprocess.py:93} INFO -     self._result.rows += self.fetch()
+[2026-05-13T22:25:43.616+0000] {subprocess.py:93} INFO -                          ^^^^^^^^^^^^
+[2026-05-13T22:25:43.617+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/trino/client.py", line 958, in fetch
+[2026-05-13T22:25:43.617+0000] {subprocess.py:93} INFO -     status = self._request.process(response)
+[2026-05-13T22:25:43.617+0000] {subprocess.py:93} INFO -              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-13T22:25:43.618+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/trino/client.py", line 727, in process
+[2026-05-13T22:25:43.620+0000] {subprocess.py:93} INFO -     raise self._process_error(response["error"], response.get("id"))
+[2026-05-13T22:25:43.621+0000] {subprocess.py:93} INFO - trino.exceptions.TrinoUserError: TrinoUserError(type=USER_ERROR, name=TABLE_NOT_FOUND, message="Table 'minio.feature_data_gazp_agg.model_metrics' does not exist", query_id=20260513_222543_00055_g8aze)
+[2026-05-13T22:25:43.813+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-05-13T22:25:43.815+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-13T22:25:43.828+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-05-13T22:25:43.833+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=moex_candles_loader, task_id=run_feature_ML, run_id=manual__2026-05-13T22:15:28.489482+00:00, execution_date=20260513T221528, start_date=20260513T222159, end_date=20260513T222543
+[2026-05-13T22:25:43.854+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 118 for task run_feature_ML (Bash command failed. The command returned a non-zero exit code 1.; 410)
+[2026-05-13T22:25:43.887+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-05-13T22:25:43.911+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-13T22:25:43.921+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

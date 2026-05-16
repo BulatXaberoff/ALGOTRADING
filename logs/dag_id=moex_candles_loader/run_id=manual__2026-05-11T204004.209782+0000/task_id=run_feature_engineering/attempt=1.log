@@ -1,0 +1,42 @@
+[2026-05-11T20:40:21.462+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-11T20:40:21.501+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: moex_candles_loader.run_feature_engineering manual__2026-05-11T20:40:04.209782+00:00 [queued]>
+[2026-05-11T20:40:21.516+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: moex_candles_loader.run_feature_engineering manual__2026-05-11T20:40:04.209782+00:00 [queued]>
+[2026-05-11T20:40:21.517+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-05-11T20:40:21.549+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_feature_engineering> on 2026-05-11 20:40:04.209782+00:00
+[2026-05-11T20:40:21.563+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=359) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-05-11T20:40:21.566+0000] {standard_task_runner.py:64} INFO - Started process 368 to run task
+[2026-05-11T20:40:21.564+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'moex_candles_loader', 'run_feature_engineering', 'manual__2026-05-11T20:40:04.209782+00:00', '--job-id', '55', '--raw', '--subdir', 'DAGS_FOLDER/moex_loader_dag.py', '--cfg-path', '/tmp/tmpp8hjcrpp']
+[2026-05-11T20:40:21.568+0000] {standard_task_runner.py:91} INFO - Job 55: Subtask run_feature_engineering
+[2026-05-11T20:40:21.670+0000] {task_command.py:426} INFO - Running <TaskInstance: moex_candles_loader.run_feature_engineering manual__2026-05-11T20:40:04.209782+00:00 [running]> on host ef4f4778eb40
+[2026-05-11T20:40:21.819+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='moex_candles_loader' AIRFLOW_CTX_TASK_ID='run_feature_engineering' AIRFLOW_CTX_EXECUTION_DATE='2026-05-11T20:40:04.209782+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-11T20:40:04.209782+00:00'
+[2026-05-11T20:40:21.824+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-11T20:40:21.826+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-05-11T20:40:21.828+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/scripts/feature_engineering_loader.py']
+[2026-05-11T20:40:21.850+0000] {subprocess.py:86} INFO - Output:
+[2026-05-11T20:40:26.456+0000] {subprocess.py:93} INFO - [1/7] Очистка старых объектов...
+[2026-05-11T20:40:26.460+0000] {subprocess.py:93} INFO -     ✓ Старые объекты удалены
+[2026-05-11T20:40:26.464+0000] {subprocess.py:93} INFO - [2/7] Создание схемы...
+[2026-05-11T20:40:26.468+0000] {subprocess.py:93} INFO -     ✓ OK
+[2026-05-11T20:40:26.471+0000] {subprocess.py:93} INFO - [3/7] Создание v_candle_features...
+[2026-05-11T20:40:26.472+0000] {subprocess.py:93} INFO -     ✓ OK
+[2026-05-11T20:40:26.473+0000] {subprocess.py:93} INFO - [4/7] Создание v_rsi...
+[2026-05-11T20:40:26.475+0000] {subprocess.py:93} INFO -     ✓ OK
+[2026-05-11T20:40:26.478+0000] {subprocess.py:93} INFO - [5/7] Создание v_macd...
+[2026-05-11T20:40:26.482+0000] {subprocess.py:93} INFO -     ✓ OK
+[2026-05-11T20:40:26.485+0000] {subprocess.py:93} INFO - [6/7] Создание v_volume_bb_atr...
+[2026-05-11T20:40:26.488+0000] {subprocess.py:93} INFO -     ✓ OK
+[2026-05-11T20:40:26.490+0000] {subprocess.py:93} INFO - [7/7] Создание финальной features...
+[2026-05-11T20:40:26.495+0000] {subprocess.py:93} INFO -     ✓ OK
+[2026-05-11T20:40:26.497+0000] {subprocess.py:93} INFO - Создание predictions...
+[2026-05-11T20:40:26.499+0000] {subprocess.py:93} INFO -     ✓ OK
+[2026-05-11T20:40:26.500+0000] {subprocess.py:93} INFO - 
+[2026-05-11T20:40:26.502+0000] {subprocess.py:93} INFO - Готово.
+[2026-05-11T20:40:26.502+0000] {subprocess.py:93} INFO - SELECT * FROM minio.feature_data_gazp_agg.features LIMIT 10
+[2026-05-11T20:40:26.536+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-05-11T20:40:26.538+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-11T20:40:26.600+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=moex_candles_loader, task_id=run_feature_engineering, run_id=manual__2026-05-11T20:40:04.209782+00:00, execution_date=20260511T204004, start_date=20260511T204021, end_date=20260511T204026
+[2026-05-11T20:40:26.657+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-05-11T20:40:26.703+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-05-11T20:40:26.713+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

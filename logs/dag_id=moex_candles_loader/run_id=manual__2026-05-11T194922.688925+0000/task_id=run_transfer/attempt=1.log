@@ -1,0 +1,128 @@
+[2026-05-11T19:49:36.333+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-11T19:49:36.388+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: moex_candles_loader.run_transfer manual__2026-05-11T19:49:22.688925+00:00 [queued]>
+[2026-05-11T19:49:36.402+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: moex_candles_loader.run_transfer manual__2026-05-11T19:49:22.688925+00:00 [queued]>
+[2026-05-11T19:49:36.404+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-05-11T19:49:36.434+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_transfer> on 2026-05-11 19:49:22.688925+00:00
+[2026-05-11T19:49:36.448+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=111) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-05-11T19:49:36.450+0000] {standard_task_runner.py:64} INFO - Started process 113 to run task
+[2026-05-11T19:49:36.452+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'moex_candles_loader', 'run_transfer', 'manual__2026-05-11T19:49:22.688925+00:00', '--job-id', '42', '--raw', '--subdir', 'DAGS_FOLDER/moex_loader_dag.py', '--cfg-path', '/tmp/tmpzkqfhmy1']
+[2026-05-11T19:49:36.458+0000] {standard_task_runner.py:91} INFO - Job 42: Subtask run_transfer
+[2026-05-11T19:49:36.573+0000] {task_command.py:426} INFO - Running <TaskInstance: moex_candles_loader.run_transfer manual__2026-05-11T19:49:22.688925+00:00 [running]> on host 42e42b0080d5
+[2026-05-11T19:49:36.750+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='moex_candles_loader' AIRFLOW_CTX_TASK_ID='run_transfer' AIRFLOW_CTX_EXECUTION_DATE='2026-05-11T19:49:22.688925+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-11T19:49:22.688925+00:00'
+[2026-05-11T19:49:36.753+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-11T19:49:36.755+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-05-11T19:49:36.757+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/scripts/transfer.py']
+[2026-05-11T19:49:36.778+0000] {subprocess.py:86} INFO - Output:
+[2026-05-11T19:49:38.210+0000] {subprocess.py:93} INFO - [1/2] Пересоздаём внешнюю таблицу minio.moex_data.GAZP...
+[2026-05-11T19:49:38.212+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-05-11T19:49:38.214+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/urllib3/connection.py", line 203, in _new_conn
+[2026-05-11T19:49:38.215+0000] {subprocess.py:93} INFO -     sock = connection.create_connection(
+[2026-05-11T19:49:38.217+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-11T19:49:38.217+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/urllib3/util/connection.py", line 85, in create_connection
+[2026-05-11T19:49:38.218+0000] {subprocess.py:93} INFO -     raise err
+[2026-05-11T19:49:38.220+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+[2026-05-11T19:49:38.221+0000] {subprocess.py:93} INFO -     sock.connect(sa)
+[2026-05-11T19:49:38.222+0000] {subprocess.py:93} INFO - ConnectionRefusedError: [Errno 111] Connection refused
+[2026-05-11T19:49:38.223+0000] {subprocess.py:93} INFO - 
+[2026-05-11T19:49:38.225+0000] {subprocess.py:93} INFO - The above exception was the direct cause of the following exception:
+[2026-05-11T19:49:38.226+0000] {subprocess.py:93} INFO - 
+[2026-05-11T19:49:38.227+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-05-11T19:49:38.228+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 791, in urlopen
+[2026-05-11T19:49:38.229+0000] {subprocess.py:93} INFO -     response = self._make_request(
+[2026-05-11T19:49:38.230+0000] {subprocess.py:93} INFO -                ^^^^^^^^^^^^^^^^^^^
+[2026-05-11T19:49:38.230+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 497, in _make_request
+[2026-05-11T19:49:38.232+0000] {subprocess.py:93} INFO -     conn.request(
+[2026-05-11T19:49:38.235+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/urllib3/connection.py", line 395, in request
+[2026-05-11T19:49:38.236+0000] {subprocess.py:93} INFO -     self.endheaders()
+[2026-05-11T19:49:38.237+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.12/http/client.py", line 1331, in endheaders
+[2026-05-11T19:49:38.238+0000] {subprocess.py:93} INFO -     self._send_output(message_body, encode_chunked=encode_chunked)
+[2026-05-11T19:49:38.239+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.12/http/client.py", line 1091, in _send_output
+[2026-05-11T19:49:38.241+0000] {subprocess.py:93} INFO -     self.send(msg)
+[2026-05-11T19:49:38.242+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.12/http/client.py", line 1035, in send
+[2026-05-11T19:49:38.243+0000] {subprocess.py:93} INFO -     self.connect()
+[2026-05-11T19:49:38.244+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/urllib3/connection.py", line 243, in connect
+[2026-05-11T19:49:38.246+0000] {subprocess.py:93} INFO -     self.sock = self._new_conn()
+[2026-05-11T19:49:38.247+0000] {subprocess.py:93} INFO -                 ^^^^^^^^^^^^^^^^
+[2026-05-11T19:49:38.248+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/urllib3/connection.py", line 218, in _new_conn
+[2026-05-11T19:49:38.248+0000] {subprocess.py:93} INFO -     raise NewConnectionError(
+[2026-05-11T19:49:38.249+0000] {subprocess.py:93} INFO - urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x77926c7246b0>: Failed to establish a new connection: [Errno 111] Connection refused
+[2026-05-11T19:49:38.252+0000] {subprocess.py:93} INFO - 
+[2026-05-11T19:49:38.253+0000] {subprocess.py:93} INFO - The above exception was the direct cause of the following exception:
+[2026-05-11T19:49:38.254+0000] {subprocess.py:93} INFO - 
+[2026-05-11T19:49:38.257+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-05-11T19:49:38.258+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/requests/adapters.py", line 696, in send
+[2026-05-11T19:49:38.259+0000] {subprocess.py:93} INFO -     resp = conn.urlopen(
+[2026-05-11T19:49:38.260+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^
+[2026-05-11T19:49:38.261+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 845, in urlopen
+[2026-05-11T19:49:38.262+0000] {subprocess.py:93} INFO -     retries = retries.increment(
+[2026-05-11T19:49:38.263+0000] {subprocess.py:93} INFO -               ^^^^^^^^^^^^^^^^^^
+[2026-05-11T19:49:38.264+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/urllib3/util/retry.py", line 515, in increment
+[2026-05-11T19:49:38.264+0000] {subprocess.py:93} INFO -     raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+[2026-05-11T19:49:38.265+0000] {subprocess.py:93} INFO -     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-11T19:49:38.266+0000] {subprocess.py:93} INFO - urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8086): Max retries exceeded with url: /v1/statement (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x77926c7246b0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2026-05-11T19:49:38.267+0000] {subprocess.py:93} INFO - 
+[2026-05-11T19:49:38.268+0000] {subprocess.py:93} INFO - During handling of the above exception, another exception occurred:
+[2026-05-11T19:49:38.269+0000] {subprocess.py:93} INFO - 
+[2026-05-11T19:49:38.270+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-05-11T19:49:38.272+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/trino/client.py", line 921, in execute
+[2026-05-11T19:49:38.273+0000] {subprocess.py:93} INFO -     response = self._request.post(self._query, additional_http_headers)
+[2026-05-11T19:49:38.274+0000] {subprocess.py:93} INFO -                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-11T19:49:38.275+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/trino/client.py", line 672, in post
+[2026-05-11T19:49:38.276+0000] {subprocess.py:93} INFO -     http_response = self._post(
+[2026-05-11T19:49:38.280+0000] {subprocess.py:93} INFO -                     ^^^^^^^^^^^
+[2026-05-11T19:49:38.281+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/trino/client.py", line 1053, in decorated
+[2026-05-11T19:49:38.282+0000] {subprocess.py:93} INFO -     raise error
+[2026-05-11T19:49:38.283+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/trino/client.py", line 1035, in decorated
+[2026-05-11T19:49:38.283+0000] {subprocess.py:93} INFO -     result = func(*args, **kwargs)
+[2026-05-11T19:49:38.284+0000] {subprocess.py:93} INFO -              ^^^^^^^^^^^^^^^^^^^^^
+[2026-05-11T19:49:38.284+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/requests/sessions.py", line 712, in post
+[2026-05-11T19:49:38.285+0000] {subprocess.py:93} INFO -     return self.request("POST", url, data=data, json=json, **kwargs)
+[2026-05-11T19:49:38.285+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-11T19:49:38.286+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/requests/sessions.py", line 651, in request
+[2026-05-11T19:49:38.287+0000] {subprocess.py:93} INFO -     resp = self.send(prep, **send_kwargs)
+[2026-05-11T19:49:38.288+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-11T19:49:38.289+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/requests/sessions.py", line 784, in send
+[2026-05-11T19:49:38.289+0000] {subprocess.py:93} INFO -     r = adapter.send(request, **kwargs)
+[2026-05-11T19:49:38.290+0000] {subprocess.py:93} INFO -         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-11T19:49:38.290+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/requests/adapters.py", line 729, in send
+[2026-05-11T19:49:38.291+0000] {subprocess.py:93} INFO -     raise ConnectionError(e, request=request)
+[2026-05-11T19:49:38.291+0000] {subprocess.py:93} INFO - requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8086): Max retries exceeded with url: /v1/statement (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x77926c7246b0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2026-05-11T19:49:38.292+0000] {subprocess.py:93} INFO - 
+[2026-05-11T19:49:38.292+0000] {subprocess.py:93} INFO - During handling of the above exception, another exception occurred:
+[2026-05-11T19:49:38.293+0000] {subprocess.py:93} INFO - 
+[2026-05-11T19:49:38.293+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-05-11T19:49:38.294+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/scripts/transfer.py", line 99, in <module>
+[2026-05-11T19:49:38.296+0000] {subprocess.py:93} INFO -     main()
+[2026-05-11T19:49:38.298+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/scripts/transfer.py", line 93, in main
+[2026-05-11T19:49:38.299+0000] {subprocess.py:93} INFO -     recreate_external_table()
+[2026-05-11T19:49:38.300+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/scripts/transfer.py", line 37, in recreate_external_table
+[2026-05-11T19:49:38.301+0000] {subprocess.py:93} INFO -     cur.execute(f"DROP TABLE IF EXISTS {full_table}")
+[2026-05-11T19:49:38.302+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/trino/dbapi.py", line 640, in execute
+[2026-05-11T19:49:38.302+0000] {subprocess.py:93} INFO -     self._iterator = iter(self._query.execute())
+[2026-05-11T19:49:38.303+0000] {subprocess.py:93} INFO -                           ^^^^^^^^^^^^^^^^^^^^^
+[2026-05-11T19:49:38.304+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/trino/client.py", line 923, in execute
+[2026-05-11T19:49:38.305+0000] {subprocess.py:93} INFO -     raise trino.exceptions.TrinoConnectionError("failed to execute: {}".format(e))
+[2026-05-11T19:49:38.306+0000] {subprocess.py:93} INFO - trino.exceptions.TrinoConnectionError: failed to execute: HTTPConnectionPool(host='localhost', port=8086): Max retries exceeded with url: /v1/statement (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x77926c7246b0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2026-05-11T19:49:38.306+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-05-11T19:49:38.308+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-11T19:49:38.324+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-05-11T19:49:38.331+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=moex_candles_loader, task_id=run_transfer, run_id=manual__2026-05-11T19:49:22.688925+00:00, execution_date=20260511T194922, start_date=20260511T194936, end_date=20260511T194938
+[2026-05-11T19:49:38.355+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 42 for task run_transfer (Bash command failed. The command returned a non-zero exit code 1.; 113)
+[2026-05-11T19:49:38.400+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-05-11T19:49:38.434+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-11T19:49:38.445+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

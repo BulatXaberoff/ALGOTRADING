@@ -1,0 +1,26 @@
+[2026-05-13T21:58:26.348+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-13T21:58:26.386+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: moex_candles_loader.run_feature_ML manual__2026-05-13T21:57:12.805634+00:00 [queued]>
+[2026-05-13T21:58:26.400+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: moex_candles_loader.run_feature_ML manual__2026-05-13T21:57:12.805634+00:00 [queued]>
+[2026-05-13T21:58:26.402+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-05-13T21:58:26.428+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_feature_ML> on 2026-05-13 21:57:12.805634+00:00
+[2026-05-13T21:58:26.441+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=977) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-05-13T21:58:26.444+0000] {standard_task_runner.py:64} INFO - Started process 979 to run task
+[2026-05-13T21:58:26.446+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'moex_candles_loader', 'run_feature_ML', 'manual__2026-05-13T21:57:12.805634+00:00', '--job-id', '106', '--raw', '--subdir', 'DAGS_FOLDER/moex_loader_dag.py', '--cfg-path', '/tmp/tmpph4xeao1']
+[2026-05-13T21:58:26.451+0000] {standard_task_runner.py:91} INFO - Job 106: Subtask run_feature_ML
+[2026-05-13T21:58:26.595+0000] {task_command.py:426} INFO - Running <TaskInstance: moex_candles_loader.run_feature_ML manual__2026-05-13T21:57:12.805634+00:00 [running]> on host ef4f4778eb40
+[2026-05-13T21:58:26.763+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='moex_candles_loader' AIRFLOW_CTX_TASK_ID='run_feature_ML' AIRFLOW_CTX_EXECUTION_DATE='2026-05-13T21:57:12.805634+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-13T21:57:12.805634+00:00'
+[2026-05-13T21:58:26.767+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-13T21:58:26.773+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-05-13T21:58:26.776+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/scripts/gazp_ml_v2.py']
+[2026-05-13T21:58:26.801+0000] {subprocess.py:86} INFO - Output:
+[2026-05-13T21:58:41.638+0000] {local_task_job_runner.py:313} WARNING - State of this instance has been externally set to upstream_failed. Terminating instance.
+[2026-05-13T21:58:41.648+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-05-13T21:58:41.651+0000] {process_utils.py:132} INFO - Sending 15 to group 979. PIDs of all processes in the group: [987, 979]
+[2026-05-13T21:58:41.655+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 979
+[2026-05-13T21:58:41.670+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2026-05-13T21:58:41.672+0000] {subprocess.py:104} INFO - Sending SIGTERM signal to process group
+[2026-05-13T21:58:41.675+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-13T21:58:41.724+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=979, status='terminated', exitcode=0, started='21:58:25') (979) terminated with exit code 0
+[2026-05-13T21:58:41.726+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=987, status='terminated', started='21:58:25') (987) terminated with exit code None

@@ -61,6 +61,8 @@ x-airflow-common:
     AIRFLOW__CORE__LOAD_EXAMPLES: 'true'
     AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session'
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
+    TRINO_HOST: trino
+    TRINO_PORT: 8080
     # _PIP_ADDITIONAL_REQUIREMENTS: pandas boto3 pyarrow moexalgo
   volumes:
     - ${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags
@@ -77,6 +79,29 @@ x-airflow-common:
     - trino-network
 
 services:
+  dash:
+    build:
+      context: .
+      dockerfile: Dockerfile.dash
+    container_name: dash
+    ports:
+      - "8050:8050"
+    networks:
+      - trino-network
+    restart: unless-stopped
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: admin
+      GF_INSTALL_PLUGINS: yesoreyeram-infinity-datasource
+    volumes:
+      - grafana_data:/var/lib/grafana
+    networks:
+      - trino-network
+    restart: unless-stopped
   postgres:
     image: postgres:13
     environment:
@@ -350,6 +375,75 @@ services:
       - trino-network
     restart: unless-stopped
 
+  superset:
+    build:
+      context: .
+      dockerfile: Dockerfile.superset
+    container_name: superset
+    ports:
+      - "8088:8088"
+    environment:
+      DATABASE_DB: superset
+      DATABASE_USER: superset
+      DATABASE_PASSWORD: superset
+      DATABASE_HOST: superset-db
+      DATABASE_PORT: 5432
+      REDIS_HOST: superset-redis
+      REDIS_PORT: 6379
+      SUPERSET_SECRET_KEY: "supersecretkey"
+      SQLALCHEMY_DATABASE_URI: postgresql+psycopg2://superset:superset@superset-db:5432/superset
+    depends_on:
+      - superset-db
+      - superset-redis
+    volumes:
+      - superset_home:/app/superset_home
+      - ./superset_config.py:/app/pythonpath/superset_config.py  # добавить
+    networks:
+      - trino-network
+
+  superset-init:
+    build:
+      context: .
+      dockerfile: Dockerfile.superset
+    container_name: superset-init
+    depends_on:
+      - superset-db
+      - superset-redis
+    environment:
+      SUPERSET_SECRET_KEY: "supersecretkey"
+      SQLALCHEMY_DATABASE_URI: postgresql+psycopg2://superset:superset@superset-db:5432/superset
+      DATABASE_DB: superset
+      DATABASE_USER: superset
+      DATABASE_PASSWORD: superset
+      DATABASE_HOST: superset-db
+      DATABASE_PORT: 5432
+    command: >
+      bash -c "superset db upgrade &&
+              superset fab create-admin --username admin --firstname Admin --lastname User --email admin@example.com --password admin &&
+              superset init"
+    networks:
+      - trino-network
+    volumes:
+      - ./superset_config.py:/app/pythonpath/superset_config.py  # добавить
+
+  superset-db:
+    image: postgres:15
+    container_name: superset-db
+    environment:
+      POSTGRES_DB: superset
+      POSTGRES_USER: superset
+      POSTGRES_PASSWORD: superset
+    volumes:
+      - superset_postgres_data:/var/lib/postgresql/data
+    networks:
+      - trino-network
+
+  superset-redis:
+    image: redis:7
+    container_name: superset-redis
+    networks:
+      - trino-network
+
 
 networks:
   trino-network:
@@ -358,3 +452,6 @@ networks:
 volumes:
   postgres-db-volume:
   minio_data:
+  superset_home:
+  superset_postgres_data:
+  grafana_data:

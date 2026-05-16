@@ -1,0 +1,90 @@
+[2026-05-13T20:29:47.493+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-13T20:29:47.544+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: moex_candles_loader.run_feature_ML manual__2026-05-13T20:27:50.066978+00:00 [queued]>
+[2026-05-13T20:29:47.564+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: moex_candles_loader.run_feature_ML manual__2026-05-13T20:27:50.066978+00:00 [queued]>
+[2026-05-13T20:29:47.567+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-05-13T20:29:47.609+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_feature_ML> on 2026-05-13 20:27:50.066978+00:00
+[2026-05-13T20:29:47.624+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=452) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-05-13T20:29:47.628+0000] {standard_task_runner.py:64} INFO - Started process 454 to run task
+[2026-05-13T20:29:47.627+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'moex_candles_loader', 'run_feature_ML', 'manual__2026-05-13T20:27:50.066978+00:00', '--job-id', '88', '--raw', '--subdir', 'DAGS_FOLDER/moex_loader_dag.py', '--cfg-path', '/tmp/tmpt6udgcm1']
+[2026-05-13T20:29:47.632+0000] {standard_task_runner.py:91} INFO - Job 88: Subtask run_feature_ML
+[2026-05-13T20:29:47.768+0000] {task_command.py:426} INFO - Running <TaskInstance: moex_candles_loader.run_feature_ML manual__2026-05-13T20:27:50.066978+00:00 [running]> on host ef4f4778eb40
+[2026-05-13T20:29:48.001+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='moex_candles_loader' AIRFLOW_CTX_TASK_ID='run_feature_ML' AIRFLOW_CTX_EXECUTION_DATE='2026-05-13T20:27:50.066978+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-13T20:27:50.066978+00:00'
+[2026-05-13T20:29:48.006+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-13T20:29:48.010+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-05-13T20:29:48.013+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/scripts/gazp_ml_v2.py']
+[2026-05-13T20:29:48.055+0000] {subprocess.py:86} INFO - Output:
+[2026-05-13T20:32:17.441+0000] {subprocess.py:93} INFO - 
+[2026-05-13T20:32:17.442+0000] {subprocess.py:93} INFO - ==================================================
+[2026-05-13T20:32:17.443+0000] {subprocess.py:93} INFO -   РЕЖИМ: ОБУЧЕНИЕ
+[2026-05-13T20:32:17.443+0000] {subprocess.py:93} INFO - ==================================================
+[2026-05-13T20:32:17.444+0000] {subprocess.py:93} INFO - 
+[2026-05-13T20:32:17.444+0000] {subprocess.py:93} INFO - [1] Загружаем из Trino: minio.feature_data_gazp_agg.features
+[2026-05-13T20:32:17.445+0000] {subprocess.py:93} INFO -   Загружаем фичи из minio.feature_data_gazp_agg.features...
+[2026-05-13T20:32:17.445+0000] {subprocess.py:93} INFO -   → 24,767 строк, 7 колонок
+[2026-05-13T20:32:17.445+0000] {subprocess.py:93} INFO - 
+[2026-05-13T20:32:17.446+0000] {subprocess.py:93} INFO -   ⚠  Таблица содержит только 7 колонок.
+[2026-05-13T20:32:17.446+0000] {subprocess.py:93} INFO -      SQL-скрипт (Часть 5) ещё не выполнен полностью.
+[2026-05-13T20:32:17.447+0000] {subprocess.py:93} INFO -      Фичи будут досчитаны локально через pandas.
+[2026-05-13T20:32:17.447+0000] {subprocess.py:93} INFO - 
+[2026-05-13T20:32:17.448+0000] {subprocess.py:93} INFO -   Чтобы исправить — выполни в Trino:
+[2026-05-13T20:32:17.448+0000] {subprocess.py:93} INFO -     DROP TABLE IF EXISTS minio.feature_data_gazp_agg.features;
+[2026-05-13T20:32:17.448+0000] {subprocess.py:93} INFO -     -- затем Часть 5 из gazp_features_minio.sql
+[2026-05-13T20:32:17.449+0000] {subprocess.py:93} INFO - 
+[2026-05-13T20:32:17.449+0000] {subprocess.py:93} INFO -   Загружаем сырые данные из minio.moex_data.gazp_view...
+[2026-05-13T20:32:17.450+0000] {subprocess.py:93} INFO -   → 24,767 строк из minio.moex_data.gazp_view
+[2026-05-13T20:32:17.450+0000] {subprocess.py:93} INFO -   Считаем фичи локально (pandas + ta)...
+[2026-05-13T20:32:17.451+0000] {subprocess.py:93} INFO -   → фичи готовы: 62 колонок
+[2026-05-13T20:32:17.451+0000] {subprocess.py:93} INFO - [2] Данные загружены: 24,767 строк, 62 колонок.
+[2026-05-13T20:32:17.451+0000] {subprocess.py:93} INFO - 
+[2026-05-13T20:32:17.452+0000] {subprocess.py:93} INFO - [3] Подготовка датасета...
+[2026-05-13T20:32:17.452+0000] {subprocess.py:93} INFO -   Train: 19,786 строк  [2020-01-09 — 2025-06-08]
+[2026-05-13T20:32:17.452+0000] {subprocess.py:93} INFO -   Test:  4,947  строк  [2025-06-08 — 2026-05-13]
+[2026-05-13T20:32:17.453+0000] {subprocess.py:93} INFO - 
+[2026-05-13T20:32:17.453+0000] {subprocess.py:93} INFO - [4] Обучение...
+[2026-05-13T20:32:17.454+0000] {subprocess.py:93} INFO -   XGBoost (классификатор ↑↓)...
+[2026-05-13T20:32:17.454+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-05-13T20:32:17.454+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/scripts/gazp_ml_v2.py", line 680, in <module>
+[2026-05-13T20:32:17.455+0000] {subprocess.py:93} INFO -     run_train(csv_path=args.csv)
+[2026-05-13T20:32:17.455+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/scripts/gazp_ml_v2.py", line 618, in run_train
+[2026-05-13T20:32:17.456+0000] {subprocess.py:93} INFO -     reg = train_regressor(X_tr, y_tr_p)
+[2026-05-13T20:32:17.456+0000] {subprocess.py:93} INFO -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-13T20:32:17.457+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/scripts/gazp_ml_v2.py", line 437, in train_regressor
+[2026-05-13T20:32:17.457+0000] {subprocess.py:93} INFO -     from lightgbm import LGBMRegressor
+[2026-05-13T20:32:17.458+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/lightgbm/__init__.py", line 11, in <module>
+[2026-05-13T20:32:17.459+0000] {subprocess.py:93} INFO -     from .basic import Booster, Dataset, Sequence, register_logger
+[2026-05-13T20:32:17.459+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/lightgbm/basic.py", line 9, in <module>
+[2026-05-13T20:32:17.460+0000] {subprocess.py:93} INFO -     from .libpath import _LIB  # isort: skip
+[2026-05-13T20:32:17.460+0000] {subprocess.py:93} INFO -     ^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-13T20:32:17.460+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/lightgbm/libpath.py", line 49, in <module>
+[2026-05-13T20:32:17.461+0000] {subprocess.py:93} INFO -     _LIB = ctypes.cdll.LoadLibrary(_find_lib_path()[0])
+[2026-05-13T20:32:17.461+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-13T20:32:17.462+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.12/ctypes/__init__.py", line 460, in LoadLibrary
+[2026-05-13T20:32:17.462+0000] {subprocess.py:93} INFO -     return self._dlltype(name)
+[2026-05-13T20:32:17.463+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^
+[2026-05-13T20:32:17.463+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.12/ctypes/__init__.py", line 379, in __init__
+[2026-05-13T20:32:17.464+0000] {subprocess.py:93} INFO -     self._handle = _dlopen(self._name, mode)
+[2026-05-13T20:32:17.465+0000] {subprocess.py:93} INFO -                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-05-13T20:32:17.465+0000] {subprocess.py:93} INFO - OSError: libgomp.so.1: cannot open shared object file: No such file or directory
+[2026-05-13T20:32:17.927+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-05-13T20:32:17.930+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-13T20:32:17.955+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-05-13T20:32:17.966+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=moex_candles_loader, task_id=run_feature_ML, run_id=manual__2026-05-13T20:27:50.066978+00:00, execution_date=20260513T202750, start_date=20260513T202947, end_date=20260513T203217
+[2026-05-13T20:32:18.035+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 88 for task run_feature_ML (Bash command failed. The command returned a non-zero exit code 1.; 454)
+[2026-05-13T20:32:18.080+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-05-13T20:32:18.114+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-13T20:32:18.124+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

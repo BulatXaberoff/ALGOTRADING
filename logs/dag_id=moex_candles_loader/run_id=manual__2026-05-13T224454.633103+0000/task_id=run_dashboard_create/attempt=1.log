@@ -1,0 +1,48 @@
+[2026-05-13T23:17:34.128+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-13T23:17:34.168+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: moex_candles_loader.run_dashboard_create manual__2026-05-13T22:44:54.633103+00:00 [queued]>
+[2026-05-13T23:17:34.181+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: moex_candles_loader.run_dashboard_create manual__2026-05-13T22:44:54.633103+00:00 [queued]>
+[2026-05-13T23:17:34.183+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-05-13T23:17:34.210+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_dashboard_create> on 2026-05-13 22:44:54.633103+00:00
+[2026-05-13T23:17:34.222+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=2562) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-05-13T23:17:34.226+0000] {standard_task_runner.py:64} INFO - Started process 2571 to run task
+[2026-05-13T23:17:34.225+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'moex_candles_loader', 'run_dashboard_create', 'manual__2026-05-13T22:44:54.633103+00:00', '--job-id', '128', '--raw', '--subdir', 'DAGS_FOLDER/moex_loader_dag.py', '--cfg-path', '/tmp/tmp9sddlc4d']
+[2026-05-13T23:17:34.230+0000] {standard_task_runner.py:91} INFO - Job 128: Subtask run_dashboard_create
+[2026-05-13T23:17:34.352+0000] {task_command.py:426} INFO - Running <TaskInstance: moex_candles_loader.run_dashboard_create manual__2026-05-13T22:44:54.633103+00:00 [running]> on host ef4f4778eb40
+[2026-05-13T23:17:34.525+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='moex_candles_loader' AIRFLOW_CTX_TASK_ID='run_dashboard_create' AIRFLOW_CTX_EXECUTION_DATE='2026-05-13T22:44:54.633103+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-13T22:44:54.633103+00:00'
+[2026-05-13T23:17:34.529+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-13T23:17:34.531+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-05-13T23:17:34.532+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/scripts/create_superset_view.py']
+[2026-05-13T23:17:34.554+0000] {subprocess.py:86} INFO - Output:
+[2026-05-13T23:17:46.667+0000] {subprocess.py:93} INFO - 
+[2026-05-13T23:17:46.669+0000] {subprocess.py:93} INFO - =======================================================
+[2026-05-13T23:17:46.670+0000] {subprocess.py:93} INFO -   Создание v_superset_dashboard
+[2026-05-13T23:17:46.671+0000] {subprocess.py:93} INFO - =======================================================
+[2026-05-13T23:17:46.671+0000] {subprocess.py:93} INFO - 
+[2026-05-13T23:17:46.672+0000] {subprocess.py:93} INFO -     ✓ Старый VIEW удалён
+[2026-05-13T23:17:46.673+0000] {subprocess.py:93} INFO - [1/2] Создание v_superset_dashboard...
+[2026-05-13T23:17:46.674+0000] {subprocess.py:93} INFO -     ✓ OK
+[2026-05-13T23:17:46.674+0000] {subprocess.py:93} INFO - [2/2] Проверка VIEW...
+[2026-05-13T23:17:46.675+0000] {subprocess.py:93} INFO - 
+[2026-05-13T23:17:46.675+0000] {subprocess.py:93} INFO -     Результат:
+[2026-05-13T23:17:46.676+0000] {subprocess.py:93} INFO -       total_rows             34663
+[2026-05-13T23:17:46.677+0000] {subprocess.py:93} INFO -       date_from              2020-01-03 09:00:00
+[2026-05-13T23:17:46.678+0000] {subprocess.py:93} INFO -       date_to                2026-05-13 22:00:00
+[2026-05-13T23:17:46.678+0000] {subprocess.py:93} INFO -       rsi_not_null           34662
+[2026-05-13T23:17:46.679+0000] {subprocess.py:93} INFO -       macd_not_null          34663
+[2026-05-13T23:17:46.680+0000] {subprocess.py:93} INFO -       bb_not_null            34662
+[2026-05-13T23:17:46.680+0000] {subprocess.py:93} INFO -       signals_not_null       34663
+[2026-05-13T23:17:46.681+0000] {subprocess.py:93} INFO - 
+[2026-05-13T23:17:46.682+0000] {subprocess.py:93} INFO - ✓ VIEW готов: minio.feature_data_gazp_agg.v_superset_dashboard
+[2026-05-13T23:17:46.683+0000] {subprocess.py:93} INFO - 
+[2026-05-13T23:17:46.683+0000] {subprocess.py:93} INFO - Подключи в Superset:
+[2026-05-13T23:17:46.684+0000] {subprocess.py:93} INFO -   Dataset → + Dataset → Database: Trino
+[2026-05-13T23:17:46.685+0000] {subprocess.py:93} INFO -   Schema: feature_data_gazp_agg
+[2026-05-13T23:17:46.686+0000] {subprocess.py:93} INFO -   Table:  v_superset_dashboard
+[2026-05-13T23:17:46.710+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-05-13T23:17:46.712+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-13T23:17:46.781+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=moex_candles_loader, task_id=run_dashboard_create, run_id=manual__2026-05-13T22:44:54.633103+00:00, execution_date=20260513T224454, start_date=20260513T231734, end_date=20260513T231746
+[2026-05-13T23:17:46.814+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-05-13T23:17:46.835+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-13T23:17:46.842+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

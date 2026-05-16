@@ -1,0 +1,9 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+RUN pip install dash plotly trino pandas
+
+COPY dash_app.py .
+
+CMD ["python", "dash_app.py"]
